@@ -35,6 +35,13 @@ export default {
 </script>
 
 <style scoped>
+.container {
+    margin-left: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    max-width: 1339px;
+}
 .card {
     box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
     background-color: #ffffff;
@@ -65,11 +72,5 @@ h2 {
     letter-spacing: -.5px;
 }
 
-.container {
-    margin-left: 100px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    max-width: 1339px;
-}
+
 </style>
