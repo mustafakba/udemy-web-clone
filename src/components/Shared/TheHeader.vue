@@ -223,6 +223,7 @@ export default {
 }
 
 .card-popup {
+    z-index: 55;
     background-color: #f8f9fb;
     color: #1c1d1f;
     line-height: 22px;
