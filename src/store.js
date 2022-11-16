@@ -13,10 +13,13 @@ const store =createStore({
                    button_title:"Python kurslarını keşfedin",
                    courses:[
                        {
-                           image_url:"src/image/mustafa-murat-coskun-python.jpg",
-                           author:"Mustafa Murat",
-                           rate:"5 Yıldız",
-                           price:"429₺",
+                           image_url:"image/mustafa-murat-coskun-python.jpg",
+                           author:"Mustafa Murat Coşkun",
+                           comment:"(40+ Saat) Python | Sıfırdan İleri Seviye Programlama (2020)",
+                           rate:"4.7",
+                           vote:"42,505",
+                           price:"₺129.99",
+                           last_price:"₺459.99",
                            sticker:"En çok satan",
                        }
                    ]
