@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container flex mx-auto">
         <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
             <SplideSlide>
                 <div class="absolute card px-8">
@@ -36,11 +36,9 @@ export default {
 
 <style scoped>
 .container {
-    margin-left: 100px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
     max-width: 1339px;
+    min-width: 1339px;
+    align-items: center;
 }
 .card {
     box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
