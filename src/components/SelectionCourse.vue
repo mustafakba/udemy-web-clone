@@ -15,14 +15,18 @@
                 <button type="button" class="card-button-item mt-5 mb-3 font-bold button-width flex-nowrap text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" data-v-facba978="">
                     {{ this.$store.state.lesson_name.button_title }}
                 </button>
+            <div class="lesson-cards flex">
+                <LessonCard v-for="(n,index) in 5" :key="index">{{n}}</LessonCard>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
-
+import LessonCard from "@/components/Shared/LessonCard";
 export default {
     name: "SelectionCourse",
+    components: {LessonCard},
     data(){
         return{
            lessons:["Python","Excel","Web Geliştirme","JavaScript","Veri Bilimi","AWS Sertifikasyonu","Çizim"],
