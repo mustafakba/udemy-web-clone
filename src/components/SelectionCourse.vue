@@ -5,7 +5,7 @@
           <div class="comment mt-3.5">Her ay yayınlanan yeni kurslarla 204.000 online video kurs arasından birini seçin</div>
       </div>
         <div class="lesson-list flex mt-5">
-           <div @click="getState" v-for="(lesson,index) in lessons" :key="index" class="lesson mr-6 pl-1 hover:opacity-1 ">{{lesson.title}}</div>
+           <div @click="getLessonId(index)" v-for="(lesson,index) in lessons" :key="index" class="lesson mr-6 pl-1 hover:opacity-1 ">{{lesson.title}}</div>
         </div>
         <div class="card-container">
             <div class="card-container-title my-2">{{this.$store.state.lesson_name.title}}</div>
@@ -29,12 +29,34 @@ export default {
     components: {LessonCard},
     data(){
         return{
-           lessons:[{title:"Python",id:1}, {title:"Excel",id:2}, {title:"Web Geliştirme",id:3}, {title:"JavaScript",id:4}, {title:"Veri Bilimi",id:5}, {title:"AWS Sertifikasyonu",id:6}, {title:"Çizim",id:7}],
+           lessons:[{title:"Python",id:0}, {title:"Excel",id:1}, {title:"Web Geliştirme",id:2}, {title:"JavaScript",id:3}, {title:"Veri Bilimi",id:4}, {title:"AWS Sertifikasyonu",id:5}, {title:"Çizim",id:6}],
         }
     },
     methods:{
-        getState(){
-           return console.log(this.$store.state.lesson_name)
+        getLessonId(index){
+            var title = this.lessons[index].title
+            console.log(title)
+            if(title=="Python"){
+                console.log("store'a python gönderilecek şimdi")
+            }
+            if(title=="Excel"){
+                console.log("store'a Excel gönderilecek şimdi")
+            }
+            if(title=="Web Geliştirme"){
+                console.log("store'a Web Geliştirme gönderilecek şimdi")
+            }
+            if(title=="JavaScript"){
+                console.log("store'a JavaScript gönderilecek şimdi")
+            }
+            if(title=="Veri Bilimi"){
+                console.log("store'a Veri Bilimi gönderilecek şimdi")
+            }
+            if(title=="AWS Sertifikasyonu"){
+                console.log("store'a AWS Sertifikasyonu gönderilecek şimdi")
+            }
+            if(title=="Çizim"){
+                console.log("store'a Çizim gönderilecek şimdi")
+            }
         }
     }
 }
@@ -48,7 +70,6 @@ export default {
     align-items: center;
 }
 .title{
-    font-family: "Times New Roman";
     font-size: 32px;
     font-weight: 700;
     letter-spacing: -.5px;
@@ -57,7 +78,6 @@ export default {
     background-color: #ffffff;
 }
 .comment{
-    font-family: "Roboto Light";
     font-size: 19px;
     line-height: 26.6px;
     text-decoration: none solid rgb(28,29,31);
