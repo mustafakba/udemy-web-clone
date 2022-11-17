@@ -4,8 +4,8 @@
           <h2 class="title">Kapsamlı kurs seçkisi</h2>
           <div class="comment mt-3.5">Her ay yayınlanan yeni kurslarla 204.000 online video kurs arasından birini seçin</div>
       </div>
-        <div class="lesson-list flex mt-5">
-           <div @click="getLessonId(index)" v-for="(lesson,index) in lessons" :key="index" class="lesson mr-6 pl-1 hover:opacity-1 ">{{lesson.title}}</div>
+        <div class="lesson-list flex mt-5 ">
+           <div @click="getLessonId(index)" v-for="(lesson,index) in lessons" :key="index" class="lesson mr-6 pl-1 hover:opacity-1 cursor-pointer">{{lesson.title}}</div>
         </div>
         <div class="card-container">
             <div class="card-container-title my-2">{{this.$store.state.lesson_name.title}}</div>

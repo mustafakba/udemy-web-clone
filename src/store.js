@@ -33,9 +33,9 @@ const store = createStore({
             state.lesson_name.courses[0].author ="Mustafa Murat Coşkun"
             state.lesson_name.courses[0].comment ="(40+ Saat) Python | Sıfırdan İleri Seviye Programlama (2020)"
             state.lesson_name.courses[0].rate ="4.7"
-            state.lesson_name.courses[0].rate ="42,505"
+            state.lesson_name.courses[0].vote ="42,505"
             state.lesson_name.courses[0].price ="₺129.99"
-            state.lesson_name.courses[0].last_price ="₺429.99"
+            state.lesson_name.courses[0].last_price ="₺459.99"
             state.lesson_name.courses[0].sticker ="En çok satan"
 
         },
