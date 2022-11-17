@@ -38,24 +38,39 @@ export default {
             console.log(title)
             if(title=="Python"){
                 console.log("store'a python gönderilecek şimdi")
+                this.$store.dispatch("fillPython")
+
             }
             if(title=="Excel"){
                 console.log("store'a Excel gönderilecek şimdi")
+                this.$store.dispatch("fillExcell")
             }
             if(title=="Web Geliştirme"){
                 console.log("store'a Web Geliştirme gönderilecek şimdi")
+                this.$store.dispatch("fillWeb")
+
             }
             if(title=="JavaScript"){
                 console.log("store'a JavaScript gönderilecek şimdi")
+                this.$store.dispatch("fillJavascript")
+
             }
             if(title=="Veri Bilimi"){
                 console.log("store'a Veri Bilimi gönderilecek şimdi")
+                this.$store.dispatch("fillVeri")
+
             }
             if(title=="AWS Sertifikasyonu"){
                 console.log("store'a AWS Sertifikasyonu gönderilecek şimdi")
+                this.$store.dispatch("fillAWS")
+
+
+
             }
             if(title=="Çizim"){
                 console.log("store'a Çizim gönderilecek şimdi")
+                this.$store.dispatch("fillDraw")
+
             }
         }
     }

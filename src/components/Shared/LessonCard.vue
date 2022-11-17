@@ -13,7 +13,7 @@
             <div class="last-price ml-2 line-through">{{this.$store.state.lesson_name.courses[0].last_price}}</div>
         </div>
         <div class="card-sticker">
-            <span class="card-sticker">{{this.$store.state.lesson_name.courses[0].sticker}}</span>
+            <span class="card-sticker">{{this.$store.state.lesson_name.courses[0].sticker}} </span>
         </div>
     </div>
 
