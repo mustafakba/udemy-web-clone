@@ -5,7 +5,7 @@
           <div class="comment mt-3.5">Her ay yayınlanan yeni kurslarla 204.000 online video kurs arasından birini seçin</div>
       </div>
         <div class="lesson-list flex mt-5">
-           <div @click="getState" v-for="(lesson,index) in lessons" :key="index" class="lesson mr-6 pl-1 hover:opacity-1 ">{{lesson}}</div>
+           <div @click="getState" v-for="(lesson,index) in lessons" :key="index" class="lesson mr-6 pl-1 hover:opacity-1 ">{{lesson.title}}</div>
         </div>
         <div class="card-container">
             <div class="card-container-title my-2">{{this.$store.state.lesson_name.title}}</div>
@@ -29,7 +29,7 @@ export default {
     components: {LessonCard},
     data(){
         return{
-           lessons:["Python","Excel","Web Geliştirme","JavaScript","Veri Bilimi","AWS Sertifikasyonu","Çizim"],
+           lessons:[{title:"Python",id:1}, {title:"Excel",id:2}, {title:"Web Geliştirme",id:3}, {title:"JavaScript",id:4}, {title:"Veri Bilimi",id:5}, {title:"AWS Sertifikasyonu",id:6}, {title:"Çizim",id:7}],
         }
     },
     methods:{

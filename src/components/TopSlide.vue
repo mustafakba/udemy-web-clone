@@ -2,11 +2,11 @@
     <div class="container flex mx-auto">
         <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
             <SplideSlide>
-                <div class="absolute card px-8">
+                <div class="absolute card px-8 splide-img">
                     <h2 class="mt-5 strong-text">Sizi anlayan öğrenim deneyimi</h2>
                     <p class="mb-6 mt-2 text">Bugününüz (ve geleceğiniz) için yetkinlikler. Hemen platformumuzda öğrenmeye başlayın.</p>
                 </div>
-                <img class="splide__list relative " src="../image/top-carousel-1.jpg" alt="Sample 1">
+                <img class="splide__list relative  splide-img " src="../image/top-carousel-1.jpg" alt="Sample 1">
             </SplideSlide>
             <SplideSlide>
                 <div class="absolute card2 px-8 mt-5">
@@ -58,11 +58,9 @@ export default {
     height: 210px;
     width: 450px;
 }
-.strong-text{
+.splide-img{
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
 }
-.text{
-}
-
 h2 {
     font-size: 32px;
     font-weight: 700;
