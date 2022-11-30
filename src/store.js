@@ -11,7 +11,7 @@ const store = createStore({
                     button_title: "Python kurslarını keşfedin",
                     courses: [
                         {
-                            image_url: "image/mustafa-murat-coskun-python.jpg",
+                            image_url: "https://img-c.udemycdn.com/course/240x135/1235124_7c5f_6.jpg",
                             author: "Mustafa Murat Coşkun",
                             comment: "(40+ Saat) Python | Sıfırdan İleri Seviye Programlama (2020)",
                             rate: "4.7",
@@ -29,7 +29,7 @@ const store = createStore({
             state.lesson_name.title = "Python ile kariyer olanaklarınızı artırın"
             state.lesson_name.paragraph = "İster makine öğrenimi, ister finans alanında çalışıyor olun, ister web geliştirme veya veri bilimi alanında kariyer yapıyor olun, Python öğrenebileceğiniz en önemli becerilerden biridir. Python'un basit sözdizimi özellikle masaüstü, web ve iş uygulamaları için uygundur.\n"
             state.lesson_name.button_title ="Python kurslarını keşfedin"
-            state.lesson_name.courses[0].image_url = "image/mustafa-murat-coskun-python.jpg"
+            state.lesson_name.courses[0].image_url = "https://img-c.udemycdn.com/course/240x135/1235124_7c5f_6.jpg"
             state.lesson_name.courses[0].author ="Mustafa Murat Coşkun"
             state.lesson_name.courses[0].comment ="(40+ Saat) Python | Sıfırdan İleri Seviye Programlama (2020)"
             state.lesson_name.courses[0].rate ="4.7"
@@ -43,7 +43,7 @@ const store = createStore({
             state.lesson_name.title = "Excel ile verileri analiz edin ve görselleştirin\n"
             state.lesson_name.paragraph = "Çalıştığınız sektör ne olursa olsun Microsoft Office Excel, verileri düzenlemek ve göstermek için çok değerli bir çalışma tablosu programıdır. Excel, büyük bilgi gruplarını toplamanıza ve analiz etmenize yardımcı olacak işlevler, formüller ve pivot tabloları sunar."
             state.lesson_name.button_title = "Excel Kurslarını Keşfedin"
-            state.lesson_name.courses[0].image_url = "image/excel-course-img.jpg"
+            state.lesson_name.courses[0].image_url = "https://img-c.udemycdn.com/course/240x135/492470_9d83_5.jpg"
             state.lesson_name.courses[0].author = "Haluk Tatar"
             state.lesson_name.courses[0].comment = "Microsoft Excel | Sıfırdan Zirveye"
             state.lesson_name.courses[0].rate = "4.7"
@@ -57,7 +57,7 @@ const store = createStore({
             state.lesson_name.paragraph = "Web geliştirme dünyası, internetin kendisi kadar geniştir. Sosyal ve meslek hayatlarımızın büyük bir kısmı internette yayınlanır. Bu da, giderek daha çok güvendiğimiz web sitelerini ve uygulamaları oluşturma, yönetme ve hata ayıklama amacıyla yeni sektörlere yol açar.\n" +
                 "\n"
             state.lesson_name.button_title = "Web Geliştirme Keşfedin"
-            state.lesson_name.courses[0].image_url = "image/excel-course-img.jpg"
+            state.lesson_name.courses[0].image_url = "https://img-c.udemycdn.com/course/240x135/1258436_2dc3_4.jpg"
             state.lesson_name.courses[0].author = "Sadık Turan"
             state.lesson_name.courses[0].comment = "Komple Uygulamalı Web Geliştirme Eğitimi"
             state.lesson_name.courses[0].rate = "4.6"
@@ -70,7 +70,7 @@ const store = createStore({
             state.lesson_name.title = "JavaScript ile yazılım geliştirme yetkinliklerinizi ileriye taşıyın\n"
             state.lesson_name.paragraph = "İster makine öğrenimi, ister finans alanında çalışıyor olun, ister web geliştirme veya veri bilimi alanında kariyer yapıyor olun, Python öğrenebileceğiniz en önemli becerilerden biridir. Python'un basit sözdizimi özellikle masaüstü, web ve iş uygulamaları için uygundur."
             state.lesson_name.button_title = "JavaScript kurslarını keşfedin"
-            state.lesson_name.courses[0].image_url = "image/excel-course-img.jpg"
+            state.lesson_name.courses[0].image_url = "https://img-c.udemycdn.com/course/240x135/3411232_ca80_5.jpg"
             state.lesson_name.courses[0].author = "Levent Ertunalılar"
             state.lesson_name.courses[0].comment = "Sıfırdan İleri Seviye JS Geliştirme ES+7"
             state.lesson_name.courses[0].rate = "4.6"
@@ -84,7 +84,7 @@ const store = createStore({
             state.lesson_name.paragraph = "Veri bilimi her yerdedir. Daha iyi veri bilimi uygulamaları, şirketlerin gereksiz maliyetleri azaltmalarını, bilgi işlemi otomatikleştirmelerini ve pazarları analiz etmelerini sağlıyor. Temel olarak veri bilimi, rekabetçi bir küresel ortamda ilerlemenin anahtarıdır.\n" +
                 "\n"
             state.lesson_name.button_title = "Veri Bilimi kurslarını keşfedin"
-            state.lesson_name.courses[0].image_url = "image/excel-course-img.jpg"
+            state.lesson_name.courses[0].image_url = "https://img-c.udemycdn.com/course/240x135/1750344_1df6_2.jpg"
             state.lesson_name.courses[0].author = "Mustafa Vahit Keskin"
             state.lesson_name.courses[0].comment = "R ile Veri Bilimi ve Machine Learning"
             state.lesson_name.courses[0].rate = "4.6"
@@ -111,7 +111,7 @@ const store = createStore({
             state.lesson_name.paragraph = "Çizim, birçok sanat formunun dayandığı temel olmanın yanı sıra, aynı zamanda stresi azaltmak ve iç yaratıcılığınızı beslemek için de mükemmel bir yoldur. Çizim bize nasıl gözlemci olunacağını, ayrıntılara dikkat etmeyi ve kendimizi ifade etmeyi öğretir.\n" +
                 "\n"
             state.lesson_name.button_title = "Çizim kurslarını keşfedin"
-            state.lesson_name.courses[0].image_url = "image/mustafa-murat-coskun-python.jpg"
+            state.lesson_name.courses[0].image_url = "https://img-c.udemycdn.com/course/240x135/2016568_f7b6_2.jpg"
             state.lesson_name.courses[0].author = "Vidobu Eğitim"
             state.lesson_name.courses[0].comment = "A'dan Z'ye Çizim Kursu:Temel Sanattan Dijital Çizime"
             state.lesson_name.courses[0].rate = "4.3"

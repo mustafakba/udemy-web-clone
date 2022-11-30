@@ -1,6 +1,6 @@
 <template>
     <div class="card cursor-pointer">
-        <img src="../../image/mustafa-murat-coskun-python.jpg" alt="">
+        <div class="background-image w-full h-32 bg-center bg-no-repeat" :style="{ background: `url('${this.$store.state.lesson_name.courses[0].image_url}')` }"></div>
         <div class="course-comment">{{this.$store.state.lesson_name.courses[0].comment}}</div>
         <div class="course-author mt-0.5 mb-0.5">{{this.$store.state.lesson_name.courses[0].author}}</div>
         <div class="flex items-center">
