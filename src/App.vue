@@ -20,5 +20,7 @@ export default {
 </script>
 
 <style>
-
+#app{
+padding-bottom:250px;
+}
 </style>

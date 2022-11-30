@@ -12,10 +12,10 @@
             <div style="max-width: 800px" class="card-container-paragraph my-2">
                 {{this.$store.state.lesson_name.paragraph}}
             </div>
-                <button type="button" class="card-button-item mt-5 mb-3 font-bold button-width flex-nowrap text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" data-v-facba978="">
+                <button type="button" class="card-button-item  mt-5 mb-3 font-bold button-width flex-nowrap text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" data-v-facba978="">
                     {{ this.$store.state.lesson_name.button_title }}
                 </button>
-            <div class="lesson-cards flex">
+            <div v-if="!checkAWS " class="lesson-cards flex">
                 <LessonCard v-for="(n,index) in 5" :key="index">{{n}}</LessonCard>
             </div>
         </div>
@@ -28,12 +28,16 @@ export default {
     name: "SelectionCourse",
     components: {LessonCard},
     data(){
+
         return{
-           lessons:[{title:"Python",id:0}, {title:"Excel",id:1}, {title:"Web Geliştirme",id:2}, {title:"JavaScript",id:3}, {title:"Veri Bilimi",id:4}, {title:"AWS Sertifikasyonu",id:5}, {title:"Çizim",id:6}],
+        checkAWS : false,
+        lessons:[{title:"Python",id:0}, {title:"Excel",id:1}, {title:"Web Geliştirme",id:2}, {title:"JavaScript",id:3}, {title:"Veri Bilimi",id:4}, {title:"AWS Sertifikasyonu",id:5}, {title:"Çizim",id:6}],
         }
     },
     methods:{
+
         getLessonId(index){
+            this.checkAWS = false;
             var title = this.lessons[index].title
             console.log(title)
             if(title=="Python"){
@@ -57,6 +61,8 @@ export default {
             }
             if(title=="AWS Sertifikasyonu"){
                 this.$store.dispatch("fillAWS")
+                this.checkAWS=true;
+
             }
             if(title=="Çizim"){
                 this.$store.dispatch("fillDraw")
