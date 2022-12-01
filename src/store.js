@@ -38,7 +38,7 @@ const store = createStore({
                 {
                     image_url: "https://img-c.udemycdn.com/course/240x135/1586464_cae5_3.jpg",
                     author: "Sadi Evren Şeker",
-                    comment: "Python ile Makine Öğrenmesi",
+                    comment: "Sadi Evren Şeker  Python ile Makine Öğrenmesi",
                     rate: "4.3",
                     vote: "4218",
                     price: "₺129.99",
@@ -48,7 +48,7 @@ const store = createStore({
                 {
                     image_url: "https://img-c.udemycdn.com/course/240x135/1408632_0134_2.jpg",
                     author: "Atil Samancioglu",
-                    comment: "Etik Hacker Olma Kursu",
+                    comment: "Atil Samancıoğlu ile Etik Hacker Olma Kursu",
                     rate: "4.7",
                     vote: "25623",
                     price: "₺429.99",
@@ -58,7 +58,7 @@ const store = createStore({
                 {
                     image_url: "https://img-c.udemycdn.com/course/240x135/4654606_9644.jpg",
                     author: "Elif Bala",
-                    comment: "Kapsamlı İngilizce Eğitim Seti (A1-C2)",
+                    comment: "Elif Bala ile Kapsamlı İngilizce Eğitim Seti (A1-C2)",
                     rate: "4.7",
                     vote: "25623",
                     price: "₺429.99",
@@ -68,7 +68,7 @@ const store = createStore({
                 {
                     image_url: "https://img-c.udemycdn.com/course/240x135/1207662_42a8_5.jpg",
                     author: "Atil Samancioglu",
-                    comment: "Android Mobil Uygulama Kursu",
+                    comment: "Atil Samancıoğlu ile Android Mobil Uygulama Kursu",
                     rate: "4.7",
                     vote: "25623",
                     price: "₺429.99",

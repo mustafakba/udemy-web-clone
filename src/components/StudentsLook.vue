@@ -4,7 +4,7 @@
             <Splide class="" :options="{ rewind: true }" data-splide='{"type":"loop","perPage":1, "gap":90}' >
                 <SplideSlide class="flex justify-around" >
                     <div v-for="(i,index) in this.$store.state.otherCourses.length" :key="index">
-                        <div class="card cursor-pointer">
+                        <div class="card cursor-pointer w-60">
                             <div class="background-image w-full h-32 bg-center bg-no-repeat" :style="{ background: `url('${this.$store.state.otherCourses[index].image_url}')` }"></div>
                             <div class="course-comment"> {{this.$store.state.otherCourses[index].comment}}</div>
                             <div class="course-author mt-0.5 mb-0.5">{{this.$store.state.otherCourses[index].author}}</div>
