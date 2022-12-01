@@ -4,6 +4,7 @@ import {createStore} from 'vuex'
 const store = createStore({
     state() {
         return {
+            checkAWS : false,
             lesson_name:
                 {
                     title: "Python ile kariyer olanaklarınızı artırın",
@@ -22,6 +23,60 @@ const store = createStore({
                         }
                     ]
                 },
+
+            otherCourses :[
+                {
+                    image_url: "https://img-c.udemycdn.com/course/240x135/1235124_7c5f_6.jpg",
+                    author: "Mustafa Murat Coşkun",
+                    comment: "(40+ Saat) Python | Sıfırdan İleri Seviye Programlama (2020)",
+                    rate: "4.7",
+                    vote: "42,505",
+                    price: "₺129.99",
+                    last_price: "₺459.99",
+                    sticker: "En çok satan",
+                },
+                {
+                    image_url: "https://img-c.udemycdn.com/course/240x135/1586464_cae5_3.jpg",
+                    author: "Sadi Evren Şeker",
+                    comment: "Python ile Makine Öğrenmesi",
+                    rate: "4.3",
+                    vote: "4218",
+                    price: "₺129.99",
+                    last_price: "₺459.99",
+                    sticker: "En çok satan",
+                },
+                {
+                    image_url: "https://img-c.udemycdn.com/course/240x135/1408632_0134_2.jpg",
+                    author: "Atil Samancioglu",
+                    comment: "Etik Hacker Olma Kursu",
+                    rate: "4.7",
+                    vote: "25623",
+                    price: "₺429.99",
+                    last_price: "₺459.99",
+                    sticker: "En çok satan",
+                },
+                {
+                    image_url: "https://img-c.udemycdn.com/course/240x135/4654606_9644.jpg",
+                    author: "Elif Bala",
+                    comment: "Kapsamlı İngilizce Eğitim Seti (A1-C2)",
+                    rate: "4.7",
+                    vote: "25623",
+                    price: "₺429.99",
+                    last_price: "₺459.99",
+                    sticker: "En çok satan",
+                },
+                {
+                    image_url: "https://img-c.udemycdn.com/course/240x135/1207662_42a8_5.jpg",
+                    author: "Atil Samancioglu",
+                    comment: "Android Mobil Uygulama Kursu",
+                    rate: "4.7",
+                    vote: "25623",
+                    price: "₺429.99",
+                    last_price: "₺459.99",
+                    sticker: "En çok satan",
+                },
+
+            ]
         }
     },
     actions: {

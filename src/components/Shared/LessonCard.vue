@@ -24,7 +24,6 @@ import starIcon from "@/Icons/starIcon";
 export default {
     name: "LessonCard",
     components: {starIcon}
-
 }
 </script>
 
