@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto mt-12 text-left items-center px-7 pb-32">
+    <div class="container mx-auto mt-12 text-left items-center px-7 mb-16">
       <div class="comment-title ">
           <h2 class="title">Kapsamlı kurs seçkisi</h2>
           <div class="comment mt-3.5">Her ay yayınlanan yeni kurslarla 204.000 online video kurs arasından birini seçin</div>
