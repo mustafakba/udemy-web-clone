@@ -1,6 +1,7 @@
 <template>
     <div class="container  mx-auto text-left items-center px-7 pb-32">
-        <h4 class="title">Öğrenciler Şuan Bunları Da Görüntülüyor </h4>
+        <h4 class="title">Öğrenciler şu anda bunları görüntülüyor:
+        </h4>
             <Splide class="" :options="{ rewind: true }" data-splide='{"type":"loop","perPage":1, "gap":90}' >
                 <SplideSlide class="flex justify-around" >
                     <div v-for="(i,index) in this.$store.state.otherCourses.length" :key="index">
