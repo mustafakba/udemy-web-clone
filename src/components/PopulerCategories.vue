@@ -2,10 +2,12 @@
     <div class="container justify-center items-center mx-auto">
         <h3 class="title">En Popüler Kategoriler</h3>
         <div class="flex items-center grid grid-cols-4 ">
-            <div v-for="(categories,index) in populerCategories" :key="index" class="categories-card justify-center ">
-                <div :style="{ background: `url('${populerCategories[index].courseBackgroundImg}')`}" style="width: 300px; height: 300px;" class="img-background w-max h-max ">
+            <div v-for="(categories,index) in populerCategories" :key="index" class="categories-card justify-center">
+                <div class="course-img-container w-max flex items-center justify-center" style="min-width:320px;min-height: 300px; max-width: 300px; max-height: 320px;">
+                    <div :style="{ background: `url('${populerCategories[index].courseBackgroundImg}')`}"  class="card-img w-full h-full cursor-pointer ">
+                    </div>
                 </div>
-                <div>{{populerCategories[index].courseId}}</div>
+                <div style="font-size: 1rem ; line-height: 19.2px" class="course-name title cursor-pointer">{{populerCategories[index].courseId}}</div>
             </div>
         </div>
     </div>
@@ -62,5 +64,41 @@ export default {
     height: 100%;
     max-width: 1339px;
     min-width: 1339px;
+}
+.title{
+    font-weight: 700;
+    letter-spacing: -.2px;
+    color: #1c1d1f;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.course-name{
+    margin-top: 7px;
+    margin-bottom: 30px;
+}
+.categories-card{
+
+}
+.course-img-container{
+    max-width: 300px;
+    max-height: 300px;
+    background-color:#F8F9FB;
+
+}
+.card-img{
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    min-height: 250px;
+    max-width: 250px;
+    max-height: 250px;
+    transition: .15s;
+    margin-right: 45px;
+    margin-bottom: 45px;
+
+}
+.card-img:hover{
+
+    transform:  scale(101%);
 }
 </style>
