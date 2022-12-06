@@ -6,6 +6,7 @@
     <PopulerCategories></PopulerCategories>
     <TrendingTopics></TrendingTopics>
     <BecomeInstructor></BecomeInstructor>
+    <TrustingTeams></TrustingTeams>
 </template>
 
 <script>
@@ -17,9 +18,11 @@ import StudentsLook from "@/components/StudentsLook";
 import PopulerCategories from "@/components/PopulerCategories";
 import TrendingTopics from "@/components/TrendingTopics"
 import BecomeInstructor from "@/components/BecomeInstructor";
+import TrustingTeams from "@/components/TrustingTeams";
 export default {
   name: "App",
   components: {
+      TrustingTeams,
       BecomeInstructor,
       PopulerCategories,
       StudentsLook,
