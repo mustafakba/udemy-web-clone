@@ -99,6 +99,6 @@ export default {
 }
 .card-img:hover{
 
-    transform:  scale(101%);
+    transform:  scale(105%);
 }
 </style>
