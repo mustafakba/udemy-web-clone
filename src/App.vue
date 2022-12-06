@@ -7,6 +7,7 @@
     <TrendingTopics></TrendingTopics>
     <BecomeInstructor></BecomeInstructor>
     <TrustingTeams></TrustingTeams>
+    <UdemyBusiness></UdemyBusiness>
 </template>
 
 <script>
@@ -19,9 +20,11 @@ import PopulerCategories from "@/components/PopulerCategories";
 import TrendingTopics from "@/components/TrendingTopics"
 import BecomeInstructor from "@/components/BecomeInstructor";
 import TrustingTeams from "@/components/TrustingTeams";
+import UdemyBusiness from "@/components/UdemyBusiness";
 export default {
   name: "App",
   components: {
+      UdemyBusiness,
       TrustingTeams,
       BecomeInstructor,
       PopulerCategories,

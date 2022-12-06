@@ -31,8 +31,8 @@ width: 50%;
     margin: 0;
 }
 .instructor-img img{
-    width: 400px;
-    height: 400px;
+   width: 100%;
+    height: 100%;
 }
 .become-an-instructor{
     max-width: 400px;
@@ -59,6 +59,9 @@ width: 50%;
     letter-spacing: -.5px;
 }
 .education-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #000;
     opacity: .8;
     font-size: 16px;
