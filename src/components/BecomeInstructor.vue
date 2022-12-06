@@ -3,7 +3,7 @@
            <div class="instructor-img">
                <img src="https://s.udemycdn.com/home/non-student-cta/instructor-1x-v3.jpg" alt="">
            </div>
-        <div class="become-an-instructor flex-col ">
+        <div class="become-an-instructor flex-col  sm:ml-8 sm:mt-8">
             <h2 class="title">Eğitmen Olun</h2>
             <p class="content">Dünyanın dört bir yanından eğitmenler Udemy'de milyonlarca öğrenciye eğitim veriyor. Sevdiğiniz şeyleri öğretmeniz için gereken araçları ve yetkinlikleri sağlıyoruz.
             </p>
@@ -48,8 +48,10 @@ width: 50%;
     font-family: "Times New Roman";
 }
 .content{
+    justify-content: center;
+    display: flex;
+    align-items: center;
     margin-bottom: 18px;
-    max-width: 400px;
     margin-top: 18px;
     font-size: 19px;
     line-height: 26.6px;

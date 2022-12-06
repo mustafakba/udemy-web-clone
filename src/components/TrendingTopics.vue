@@ -25,7 +25,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="course-categories">
+                <div class="course-categories md:mt-6">
                     <h3 style="font-size: 19px; color: #1c1d1f" class="font-bold mb-4 " >IT and Software</h3>
                     <div v-for="(course,index) in SoftwareCourses" :key="index" class="about-courses mb-4 mt-4">
                         <div class="course-name">
@@ -36,7 +36,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="course-categories">
+                <div class="course-categories md:mt-6 ">
                     <h3 style="font-size: 19px; color: #1c1d1f" class="font-bold mb-4 " >Design</h3>
                     <div v-for="(course,index) in designCourses" :key="index" class="about-courses mb-4 mt-4">
                         <div class="course-name">
@@ -50,7 +50,7 @@
             </div>
             <button
                 type="button"
-                class="trending-button button-width flex-nowrap text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
+                class="md:mt-3.5 trending-button button-width flex-nowrap text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
                 Daha Fazla Konuyu Keşfedin
             </button>
         </div>
@@ -165,7 +165,6 @@ export default {
     background-color: transparent;
     font-weight: 700;
     border: 1px solid #1c1d1f;
-    margin: 0 5px !important;
     display: flex;
     align-items: center;
     padding: 14px;
