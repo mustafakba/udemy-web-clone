@@ -147,6 +147,7 @@ export default {
     color: #1c1d1f;
 }
 .course-name{
+    cursor:pointer;
     margin-bottom: 8px;
     font-size: 16px;
     font-weight: 700;
