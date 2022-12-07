@@ -1,5 +1,5 @@
 <template>
-    <div class="container-m">
+    <div class="container-m mt-20 md:mt-32">
         <div class="footer-top grid lg:grid-cols-2 md:grid-cols-1 place-content-between">
             <div class="left-section grid grid-cols-1 md:grid-cols-3 ">
                 <div class="section-footer-menu mb-5 md:mb-0">
@@ -36,9 +36,9 @@
                 </div>
             </div>
         </div>
-        <div class="footer-bottom grid grid-rows-2 place-content-between lg:mt-16 md:mt-10 sm:mt-6">
-            <div class="udemy-logo">
-                <img class="w-1/6" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg" alt="">
+        <div class="footer-bottom grid grid-cols-1 grid-rows-2 place-content-between md:grid-rows-1 md:grid-cols-2">
+            <div class="udemy-logo mt-3 md:mt-0">
+                <img class="w-1/3 md:w-1/6" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg" alt="">
             </div>
             <div class=" copyright-text flex justify-start mt-2 md:mt-0 md:justify-end">
                 © 2022 Udemy, Inc.
@@ -55,7 +55,6 @@ export default {
 
 <style scoped>
 .container-m{
-    margin-top:130px ;
     background-color: #1c1d1f;
     padding:32px 50px;
 }
