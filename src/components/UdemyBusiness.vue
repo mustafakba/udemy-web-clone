@@ -2,7 +2,7 @@
     <div
         class="container mt-20 flex justify-center items-center mx-auto grid lg:grid lg:grid-cols-2 sm:grid sm:grid-cols-1 ">
         <div class="become-an-instructor text-left mr-8 sm:ml-8 sm:mt-8">
-            <div class="udemy-logo w-full">
+            <div class="udemy-logo lg:w-1/2 md:w-full sm:w-full">
                 <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-ub.svg" alt="">
             </div>
             <p class="content">Ekibiniz için en popüler 19.000+ Udemy kursuna sınırsız erişim elde edin. İşletme,
@@ -20,11 +20,11 @@
     </div>
     <div
         class="container mt-20 flex justify-center items-center mx-auto grid lg:grid lg:grid-cols-2 sm:grid sm:grid-cols-1">
-        <div class="instructor-img w-full mr-20">
+        <div class="instructor-img w-full lg:mr-20 sm:mr-0 ">
             <img src="https://s.udemycdn.com/home/non-student-cta/transform-1x-v3.jpg" alt="">
         </div>
 
-        <div class="become-an-instructor text-left ml-8 sm:ml-8 sm:mt-8">
+        <div class="become-an-instructor text-left lg:mr-20 sm:mr-0 ">
             <h2 class="title">Eğitimle hayatınızı dönüştürün</h2>
             <p class="content">Dünya genelindeki öğrenciler yeni kariyerlere başlıyor, alanlarında kendilerini
                 geliştiriyor ve hayatlarını zenginleştiriyor.
@@ -41,7 +41,7 @@
 
 <script>
 export default {
-    name: "UdemyBusiness"
+    name: "UdemyBusiness",
 }
 </script>
 
