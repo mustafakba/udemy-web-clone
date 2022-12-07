@@ -1,22 +1,22 @@
 <template>
-    <div class="container">
+    <div class="container-m">
         <div class="footer-top grid lg:grid-cols-2 md:grid-cols-1 place-content-between">
-            <div class="left-section grid grid-cols-3 ">
-                <div class="section-footer-menu">
+            <div class="left-section grid grid-cols-1 md:grid-cols-3 ">
+                <div class="section-footer-menu mb-5 md:mb-0">
                     <div>Udemy Business</div>
                     <div>Udemy'de Eğitim Verin</div>
                     <div>Uygulamayı Edinin</div>
                     <div>Hakkımızda</div>
                     <div>İletişim</div>
                 </div>
-                <div class="section-footer-menu">
+                <div class="section-footer-menu mb-5 md:mb-0">
                     <div>Kariyer</div>
                     <div>Blog</div>
                     <div>Yardım ve Destek</div>
                     <div>İş Ortaklığı</div>
                     <div>Yatırımcılar</div>
                 </div>
-                <div class="section-footer-menu">
+                <div class="section-footer-menu mb-5 md:mb-0">
                     <div>Koşullar</div>
                     <div>Gizlilik Politikası</div>
                     <div>Çerez Ayarları</div>
@@ -25,7 +25,7 @@
                 </div>
 
             </div>
-            <div class="right-section flex justify-end">
+            <div class="right-section flex justify-start md:justify-end">
                 <div class="language-button">
                     <button
                         type="button" class="flex justify-center items-center button-width flex-nowrap text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
@@ -36,11 +36,11 @@
                 </div>
             </div>
         </div>
-        <div class="footer-bottom grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 place-content-between lg:mt-16 md:mt-10 sm:mt-6">
+        <div class="footer-bottom grid grid-rows-2 place-content-between lg:mt-16 md:mt-10 sm:mt-6">
             <div class="udemy-logo">
                 <img class="w-1/6" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg" alt="">
             </div>
-            <div class=" copyright-text flex justify-end">
+            <div class=" copyright-text flex justify-start mt-2 md:mt-0 md:justify-end">
                 © 2022 Udemy, Inc.
             </div>
         </div>
@@ -54,7 +54,7 @@ export default {
 </script>
 
 <style scoped>
-.container{
+.container-m{
     margin-top:130px ;
     background-color: #1c1d1f;
     padding:32px 50px;
