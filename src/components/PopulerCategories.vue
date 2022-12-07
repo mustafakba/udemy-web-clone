@@ -1,14 +1,14 @@
 <template>
-    <div class="container justify-center items-center ml-4  md:mx-auto">
+    <div class="container  ml-4 lg:mx-auto">
         <h3 class="title">En Popüler Kategoriler</h3>
-        <div class="flex items-center grid grid-cols-4 place-content-start ">
+        <div class="flex items-center grid grid-cols-3 lg:grid-rows-1 lg:grid-cols-4 place-content-start ">
             <div v-for="(categories,index) in populerCategories" :key="index" class="categories-card">
-                <div class="course-img-container hidden md:block ">
+                <div class="course-img-container hidden lg:block ">
                     <div :style="{ background: `url('${populerCategories[index].courseBackgroundImg}')`}"  class="card-img  cursor-pointer ">
                     </div>
                 </div>
-                <div style="font-size: 1rem ; line-height: 19.2px" class="course-name title cursor-pointer mr-2 md:mr-0">
-                    <div class="border flex justify-center items-center md:block rounded-full py-1 h-12 border-black md:border-0 md:p-0 md:h-2 ">{{populerCategories[index].courseId}}</div>
+                <div style="font-size: 1rem ; line-height: 19.2px" class="course-name title cursor-pointer  mr-2 md:mr-0">
+                    <div class="border flex justify-center items-center px-4 lg:block rounded-full py-1 h-12 border-black lg:border-0 lg:p-0 lg:h-2 ">{{populerCategories[index].courseId}}</div>
                 </div>
             </div>
         </div>

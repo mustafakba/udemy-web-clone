@@ -5,7 +5,7 @@
             <p class="explanation">Önde gelen şirketler, çalışanlarının yetkinliklerini güncel tutmasına yardımcı olmak için aynı kurslardan
                 yararlanıyor.</p>
         </div>
-        <div class="companies grid grid-cols-6 place-items-center mt-6 md:grid md:grid-cols-6 sm:grid sm:grid-cols-2 px-8">
+        <div class="companies grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6  place-items-center mt-6 px-8">
             <img class="flex justify-center" v-for="(company,index) in companiesLink" :key="index" :src="companiesLink[index]" >
         </div>
     </div>

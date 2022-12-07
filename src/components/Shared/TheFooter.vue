@@ -1,22 +1,22 @@
 <template>
-    <div class="container-m mt-20 md:mt-32">
-        <div class="footer-top grid lg:grid-cols-2 md:grid-cols-1 place-content-between">
-            <div class="left-section grid grid-cols-1 md:grid-cols-3 ">
-                <div class="section-footer-menu mb-5 md:mb-0">
+    <div class="container-m mt-20 lg:mt-32">
+        <div class="footer-top grid lg:grid-cols-2 place-content-between">
+            <div class="left-section grid grid-cols-1 lg:grid-cols-3 ">
+                <div class="section-footer-menu mb-5 lg:mb-0">
                     <div>Udemy Business</div>
                     <div>Udemy'de Eğitim Verin</div>
                     <div>Uygulamayı Edinin</div>
                     <div>Hakkımızda</div>
                     <div>İletişim</div>
                 </div>
-                <div class="section-footer-menu mb-5 md:mb-0">
+                <div class="section-footer-menu mb-5 lg:mb-0">
                     <div>Kariyer</div>
                     <div>Blog</div>
                     <div>Yardım ve Destek</div>
                     <div>İş Ortaklığı</div>
                     <div>Yatırımcılar</div>
                 </div>
-                <div class="section-footer-menu mb-5 md:mb-0">
+                <div class="section-footer-menu mb-5 lg:mb-0">
                     <div>Koşullar</div>
                     <div>Gizlilik Politikası</div>
                     <div>Çerez Ayarları</div>
@@ -25,7 +25,7 @@
                 </div>
 
             </div>
-            <div class="right-section flex justify-start md:justify-end">
+            <div class="right-section flex justify-start lg:justify-end">
                 <div class="language-button">
                     <button
                         type="button" class="flex justify-center items-center button-width flex-nowrap text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
@@ -36,11 +36,11 @@
                 </div>
             </div>
         </div>
-        <div class="footer-bottom grid grid-cols-1 grid-rows-2 place-content-between md:grid-rows-1 md:grid-cols-2">
-            <div class="udemy-logo mt-3 md:mt-0">
-                <img class="w-1/3 md:w-1/6" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg" alt="">
+        <div class="footer-bottom grid grid-cols-1 grid-rows-2 place-content-between  mt-5 lg:grid-rows-1 lg:grid-cols-2">
+            <div class="udemy-logo mt-3 lg:mt-0">
+                <img class="w-1/3 lg:w-1/6" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg" alt="">
             </div>
-            <div class=" copyright-text flex justify-start mt-2 md:mt-0 md:justify-end">
+            <div class=" copyright-text flex justify-start mt-2 lg:mt-0 lg:justify-end">
                 © 2022 Udemy, Inc.
             </div>
         </div>

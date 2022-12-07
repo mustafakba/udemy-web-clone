@@ -2,8 +2,8 @@
     <div class="container mt-16 flex py-16">
         <div class="content mx-auto">
             <h3 class="title ml-8 md:ml-0 flex justify-center items-center md:block ">Kategoriye göre öne çıkan konular</h3>
-            <div class="trending-titles mt-8 place-items-center w-full grid  grid-cols-2  gap-x-0 md:grid-cols-4 md:grid-rows-1 lg:grid-cols-4  md:gap-x-60 " >
-                <div class="course-categories mb-7 md:mb-0">
+            <div class="trending-titles mt-8 place-items-center w-full grid  grid-cols-2  gap-x-0 lg:grid-cols-4 lg:grid-rows-1   lg:gap-x-60 " >
+                <div class="course-categories mb-7 lg:mb-0">
                     <h3 style="font-size: 19px; color: #1c1d1f" class="font-bold mb-4 " >Development</h3>
                     <div v-for="(course,index) in developmentCourses" :key="index" class="about-courses mb-4 mt-4">
                         <div class="course-name">
@@ -14,7 +14,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="course-categories mb-7 md:mb-0">
+                <div class="course-categories mb-7 lg:mb-0">
                     <h3 style="font-size: 19px; color: #1c1d1f" class="font-bold mb-4 " >Business</h3>
                     <div v-for="(course,index) in businessCourses" :key="index" class="about-courses mb-4 mt-4">
                         <div class="course-name">
@@ -25,7 +25,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="course-categories mb-7 md:mb-0">
+                <div class="course-categories mb-7 lg:mb-0">
                     <h3 style="font-size: 19px; color: #1c1d1f" class="font-bold mb-4 " >IT and Software</h3>
                     <div v-for="(course,index) in SoftwareCourses" :key="index" class="about-courses mb-4 mt-4">
                         <div class="course-name">
@@ -36,7 +36,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="course-categories mb-7 md:mb-0 ">
+                <div class="course-categories mb-7 lg:mb-0 ">
                     <h3 style="font-size: 19px; color: #1c1d1f" class="font-bold mb-4 " >Design</h3>
                     <div v-for="(course,index) in designCourses" :key="index" class="about-courses mb-4 mt-4">
                         <div class="course-name">
@@ -50,7 +50,7 @@
             </div>
             <button
                 type="button"
-                class="ml-24 md:ml-0 flex justify-center items-center md:block trending-button button-width flex-nowrap text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
+                class="ml-24 lg:ml-0 flex justify-center items-center md:block trending-button button-width flex-nowrap text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
                 Daha Fazla Konuyu Keşfedin
             </button>
         </div>
