@@ -55,8 +55,9 @@ export default {
 
 <style scoped>
 .container{
+    margin-top:130px ;
     background-color: #1c1d1f;
-    padding: 32px;
+    padding:32px 50px;
 }
 .section-footer-menu div{
     font-size: 14px;

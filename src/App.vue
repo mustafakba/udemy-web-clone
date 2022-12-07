@@ -43,6 +43,5 @@ export default {
 
 <style>
 #app{
-padding-bottom:250px;
 }
 </style>
