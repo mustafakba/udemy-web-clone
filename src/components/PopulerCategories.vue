@@ -1,13 +1,15 @@
 <template>
-    <div class="container justify-center items-center mx-auto">
+    <div class="container justify-center items-center ml-4  md:mx-auto">
         <h3 class="title">En Popüler Kategoriler</h3>
-        <div class="flex items-center grid grid-cols-4 ">
-            <div v-for="(categories,index) in populerCategories" :key="index" class="categories-card justify-center">
-                <div class="course-img-container w-max flex items-center justify-center" style="min-width:320px;min-height: 300px; max-width: 300px; max-height: 320px;">
-                    <div :style="{ background: `url('${populerCategories[index].courseBackgroundImg}')`}"  class="card-img w-full h-full cursor-pointer ">
+        <div class="flex items-center grid grid-cols-4 place-content-start ">
+            <div v-for="(categories,index) in populerCategories" :key="index" class="categories-card">
+                <div class="course-img-container hidden md:block ">
+                    <div :style="{ background: `url('${populerCategories[index].courseBackgroundImg}')`}"  class="card-img  cursor-pointer ">
                     </div>
                 </div>
-                <div style="font-size: 1rem ; line-height: 19.2px" class="course-name title cursor-pointer">{{populerCategories[index].courseId}}</div>
+                <div style="font-size: 1rem ; line-height: 19.2px" class="course-name title cursor-pointer mr-2 md:mr-0">
+                    <div class="border flex justify-center items-center md:block rounded-full py-1 h-12 border-black md:border-0 md:p-0 md:h-2 ">{{populerCategories[index].courseId}}</div>
+                </div>
             </div>
         </div>
     </div>
@@ -26,7 +28,7 @@ export default {
                     courseBackgroundImg : "https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg"
                 },
                 {
-                    courseId: "Yazılım Geliştirme",
+                    courseId: "Yazılım",
                     courseBackgroundImg : "https://s.udemycdn.com/home/top-categories/lohp-category-development-v2.jpg"
                 },
                 {
@@ -63,7 +65,6 @@ export default {
 .container {
     height: 100%;
     max-width: 1339px;
-    min-width: 1339px;
 }
 .title{
     font-weight: 700;
@@ -77,24 +78,17 @@ export default {
     margin-bottom: 30px;
 }
 .categories-card{
-
 }
 .course-img-container{
-    max-width: 300px;
-    max-height: 300px;
-    background-color:#F8F9FB;
 
 }
 .card-img{
     background-repeat: no-repeat;
     background-position: center;
     box-sizing: border-box;
-    min-height: 250px;
-    max-width: 250px;
-    max-height: 250px;
+    min-height: 300px;
+    max-width: 300px;
     transition: .15s;
-    margin-right: 45px;
-    margin-bottom: 45px;
 
 }
 .card-img:hover{
