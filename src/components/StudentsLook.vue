@@ -2,7 +2,7 @@
     <div class="container  mx-auto text-left items-center px-7 pb-32">
         <h4 class="title">Öğrenciler şu anda bunları görüntülüyor:
         </h4>
-            <Splide class="" :options="{ rewind: true }" data-splide='{"perPage":1, "gap":90}' >
+            <Splide class="" :options="{ rewind: true, breakpoints:{640:{type:'slide'}}}" data-splide='{"type":"loop","perPage":1, "gap":90}' >
                 <SplideSlide class="flex justify-around" >
                     <div v-for="(i,index) in this.$store.state.otherCourses.length" :key="index">
                         <div class="card cursor-pointer w-60">
