@@ -3,10 +3,10 @@
         <div class="lg:hidden w-1/3  menu-icon-svg">
             <img style="width: 24px" src="../../image/menu.svg" alt="">
         </div>
-        <div class="udemy-logo lg:mr-4 w-1/2 lg:w-24 ">
+        <div class="udemy-logo lg:mr-4 w-1/2 lg:w-24 cursor-pointer ">
             <img width="91px;" src="../../image/logo-udemy.svg" alt="">
         </div>
-        <div class="categories mr-4  hidden lg:block">Categories</div>
+        <div class="categories mr-4  hidden lg:block cursor-pointer">Categories</div>
         <div class="input flex-1 relative  hidden lg:block">
             <div class="absolute search-bar-icon">
                 <svg
@@ -17,8 +17,8 @@
             <input class="search-input" style="width: 100%" type="text" placeholder="Dilediğiniz Şeyi Arayın">
 
         </div>
-        <div class="udemy-business ml-4  hidden lg:block ">Udemy Business</div>
-        <div class="teach-on-udemy ml-4  hidden lg:block ">Udemy'de Eğitim Verin</div>
+        <div class="udemy-business ml-4  hidden lg:block cursor-pointer ">Udemy Business</div>
+        <div class="teach-on-udemy ml-4  hidden lg:block cursor-pointer">Udemy'de Eğitim Verin</div>
         <div class="svg-basket mx-0 lg:mx-4 ">
             <img style="width: 24px; height: 24px;" src="../../image/shopping-cart.svg" alt="">
         </div>
@@ -76,6 +76,9 @@ export default {
 .search-bar-icon{
     margin-top: 14.5px;
     margin-left:25px;
+}
+.cursor-pointer:hover{
+    color: #401b9c;
 
 }
 
