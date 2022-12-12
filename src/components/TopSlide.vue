@@ -80,7 +80,6 @@ h2 {
     letter-spacing: -1.5px;
     margin: 0;
     padding: 0;
-    line-height: -5px;
     font-family: Georgia;
 
 }
