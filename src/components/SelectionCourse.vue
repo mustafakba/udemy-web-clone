@@ -4,21 +4,26 @@
           <h2 class="title">Kapsamlı kurs seçkisi</h2>
           <div class="comment mt-3.5">Her ay yayınlanan yeni kurslarla 204.000 online video kurs arasından birini seçin</div>
       </div>
-        <div class="lesson-list flex mt-5 ">
-           <div @click="getLessonId(index)" v-for="(lesson,index) in lessons" :key="index" class="lesson mr-6 pl-1 hover:opacity-1 cursor-pointer">{{lesson.title}}</div>
+        <div class="lesson-list mt-5 grid lg:flex">
+           <div @click="getLessonId(index)" v-for="(lesson,index) in lessons" :key="index" class="lesson mr-6 mb-2 pl-1 hover:opacity-1 cursor-pointer">{{lesson.title}}</div>
         </div>
         <div class="card-container">
-            <div class="card-container-title my-2">{{this.$store.state.lesson_name.title}}</div>
-            <div style="max-width: 800px" class="card-container-paragraph my-2">
+            <div class="card-container-title my-2 hidden lg:block">{{this.$store.state.lesson_name.title}}</div>
+            <div style="max-width: 800px" class="card-container-paragraph hidden lg:block my-2">
                 {{this.$store.state.lesson_name.paragraph}}
             </div>
-                <button type="button" class="card-button-item  mt-5 mb-3 font-bold button-width flex-nowrap text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" data-v-facba978="">
-                    {{ this.$store.state.lesson_name.button_title }}
-                </button>
-            <div v-if="!this.$store.state.checkAWS" class="lesson-cards flex">
-                <LessonCard v-for="(n,index) in 5" :key="index">{{n}}</LessonCard>
-            </div>
+            <button type="button" class="card-button-item hidden lg:flex lg:items-center lg:justify-center  mt-5 mb-3 font-bold button-width flex-nowrap text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" data-v-facba978="">
+                {{ this.$store.state.lesson_name.button_title }}
+            </button>
+            <Splide  v-if="!this.$store.state.checkAWS" :options="{ rewind: true, breakpoints:{640:{perPage:1,gap:'1rem',},480:{perPage:1,gap:'.7rem'}}}" aria-label="My Favorite Images">
+                <SplideSlide>
+                    <div v-if="!this.$store.state.checkAWS" class="lesson-cards flex">
+                        <LessonCard v-for="(n,index) in 5" :key="index">{{n}}</LessonCard>
+                    </div>
+                </SplideSlide>
+            </Splide>
         </div>
+
     </div>
 </template>
 
@@ -73,8 +78,6 @@ export default {
 <style scoped>
 .container{
     height: 100%;
-    max-width: 1339px;
-    min-width: 1339px;
     align-items: center;
 }
 .title{
@@ -127,9 +130,6 @@ export default {
     transition: .3s;
     font-weight: 700;
     color: #1c1d1f;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border:1px solid #1c1d1f;
 }
 </style>
