@@ -1,5 +1,6 @@
 <template>
-  <TheHeader></TheHeader>
+    <HeaderSection></HeaderSection>
+
     <TopSlide></TopSlide>
     <SelectionCourse></SelectionCourse>
     <StudentsLook></StudentsLook>
@@ -9,11 +10,11 @@
     <TrustingTeams></TrustingTeams>
     <UdemyBusiness></UdemyBusiness>
     <TheFooter></TheFooter>
+
 </template>
 
 <script>
-
-import TheHeader from "./components/Shared/TheHeader.vue";
+import HeaderSection from "@/components/Shared/HeaderSection";
 import TopSlide from "@/components/TopSlide";
 import SelectionCourse from "@/components/SelectionCourse";
 import StudentsLook from "@/components/StudentsLook";
@@ -26,6 +27,7 @@ import TheFooter from "@/components/Shared/TheFooter";
 export default {
   name: "App",
   components: {
+      HeaderSection,
       TheFooter,
       UdemyBusiness,
       TrustingTeams,
@@ -35,7 +37,6 @@ export default {
       SelectionCourse,
       TopSlide,
       TrendingTopics,
-    TheHeader,
 
   },
 };
