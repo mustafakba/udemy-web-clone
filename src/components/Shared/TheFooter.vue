@@ -66,7 +66,7 @@ export default {
     color: #F8F9FB;
     margin-bottom: 12px;
 }
-.section-footer-menu span:hover{
+.section-footer-menu div:hover{
     text-decoration: underline;
 }
 .language-button button{
