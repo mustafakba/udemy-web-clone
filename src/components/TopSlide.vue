@@ -6,7 +6,7 @@
                     <h2 class="mt-5 strong-text">Sizi anlayan öğrenim deneyimi</h2>
                     <p class="mb-6 mt-2 text">Bugününüz (ve geleceğiniz) için yetkinlikler. Hemen platformumuzda öğrenmeye başlayın.</p>
                 </div>
-                <img class="splide__list relative  splide-img " src="../image/top-carousel-1.jpg" alt="Sample 1">
+                <img class="splide__list relative w-full  splide-img " src="../image/top-carousel-1.jpg" alt="Sample 1">
             </SplideSlide>
             <SplideSlide>
                 <div class="absolute card2 px-8 mt-5 hidden lg:block">
