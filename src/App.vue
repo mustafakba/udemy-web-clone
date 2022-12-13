@@ -1,6 +1,5 @@
 <template>
     <HeaderSection></HeaderSection>
-
     <TopSlide></TopSlide>
     <SelectionCourse></SelectionCourse>
     <StudentsLook></StudentsLook>
@@ -10,7 +9,6 @@
     <TrustingTeams></TrustingTeams>
     <UdemyBusiness></UdemyBusiness>
     <TheFooter></TheFooter>
-
 </template>
 
 <script>
