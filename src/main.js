@@ -5,10 +5,12 @@ import VueSplide from '@splidejs/vue-splide';
 import '@splidejs/vue-splide/css';
 
 import './assets/tailwind.css'
-
+import router from "../src/router.js";
 import store from "./store";
-const app = createApp( App );
 
+
+const app = createApp( App );
+app.use(router)
 app.use( VueSplide );
 app.use(store)
 app.mount( '#app' );
