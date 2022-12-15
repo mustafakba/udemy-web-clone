@@ -49,9 +49,12 @@ export default {
             }
             if(title=="Excel"){
                 this.$store.dispatch("fillExcell")
+
+
             }
             if(title=="Web Geliştirme"){
                 this.$store.dispatch("fillWeb")
+
 
             }
             if(title=="JavaScript"){

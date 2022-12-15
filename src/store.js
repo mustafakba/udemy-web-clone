@@ -7,6 +7,7 @@ const store = createStore({
             checkAWS : false,
             lesson_name:
                 {
+                    url :"/preview/python",
                     title: "Python ile kariyer olanaklarınızı artırın",
                     paragraph: "İster makine öğrenimi, ister finans alanında çalışıyor olun, ister web geliştirme veya veri bilimi alanında kariyer yapıyor olun, Python öğrenebileceğiniz en önemli becerilerden biridir. Python'un basit sözdizimi özellikle masaüstü, web ve iş uygulamaları için uygundur.",
                     button_title: "Python kurslarını keşfedin",
@@ -92,6 +93,7 @@ const store = createStore({
             state.lesson_name.courses[0].price ="₺129.99"
             state.lesson_name.courses[0].last_price ="₺459.99"
             state.lesson_name.courses[0].sticker ="En çok satan"
+            state.lesson_name.url = "/preview/python"
 
         },
         fillExcell({state}) {
@@ -106,6 +108,9 @@ const store = createStore({
             state.lesson_name.courses[0].price = "₺429.99"
             state.lesson_name.courses[0].last_price = ""
             state.lesson_name.courses[0].sticker = ""
+            state.lesson_name.url = "/preview/excel"
+
+
         },
         fillWeb({state}) {
             state.lesson_name.title = "Web Geliştirme ile web siteleri ve uygulamalar oluşturun\n"
@@ -120,6 +125,9 @@ const store = createStore({
             state.lesson_name.courses[0].price = "₺169.99"
             state.lesson_name.courses[0].last_price = ""
             state.lesson_name.courses[0].sticker = "En çok satan"
+            state.lesson_name.url = "/preview/web"
+
+
         },
         fillJavascript({state}) {
             state.lesson_name.title = "JavaScript ile yazılım geliştirme yetkinliklerinizi ileriye taşıyın\n"
@@ -133,6 +141,8 @@ const store = createStore({
             state.lesson_name.courses[0].price = "₺429.99"
             state.lesson_name.courses[0].last_price = ""
             state.lesson_name.courses[0].sticker = "Yeni"
+            state.lesson_name.url = "/preview/javascript"
+
         },
         fillVeri({state}) {
             state.lesson_name.title = "Veri Bilimi ile veriye dayalı kararlara öncülük edin\n"
@@ -147,6 +157,8 @@ const store = createStore({
             state.lesson_name.courses[0].price = "₺429.99"
             state.lesson_name.courses[0].last_price = ""
             state.lesson_name.courses[0].sticker = ""
+            state.lesson_name.url = "/preview/veri"
+
         },
         fillAWS({state}) {
             state.lesson_name.title = "AWS Sertifikası ile bulut bilgi işlem alanında uzmanlaşın\n"
@@ -174,6 +186,8 @@ const store = createStore({
             state.lesson_name.courses[0].price = "₺429.99"
             state.lesson_name.courses[0].last_price = ""
             state.lesson_name.courses[0].sticker = "En çok satan"
+            state.lesson_name.url = "/preview/draw"
+
         },
 
     }
