@@ -1,7 +1,7 @@
 <template>
-    <div class="container2 grid grid-cols-2 place-content-evenly place-items-center py-10 px-10 ">
-        <div class="course-detail place-self-end ">
-            <div class="title blue-text">Yazılım > {{capitalized($route.params.name)}}</div>
+    <div class="container grid grid-cols-2 place-content-evenly place-items-center py-10 px-10 relative">
+        <div class="course-detail grid-cols-2 place-self-end ">
+            <span class="title blue-text">Yazılım > {{capitalized($route.params.name)}}</span>
             <div class="course-title my-3">{{this.$store.state.lesson_name.title}}</div>
             <div class="course-paragraph my-3">{{this.$store.state.lesson_name.paragraph}}</div>
             <div class="course-point flex items-center my-3">
@@ -19,10 +19,13 @@
                 <span class="ml-2">Türkçe</span>
             </div>
         </div>
-        <div class="course-preview">
-            vide gelecek buraya
+        <div class="course-preview absolute top-24 right-96 bg-amber-50 ">
+            <div class="preview-box border-2 text-black sticky">
+                İÇERİK OLACAK
+            </div>
         </div>
     </div>
+
     <button @click="goHome">Go To HomePage</button>
 </template>
 
@@ -49,7 +52,9 @@ export default {
 </script>
 
 <style scoped>
-.container2{
+.container{
+    min-width: 1339px;
+    max-width: 2150px;
     color: #F8F9FB;
     background-color:#1C1D1F;
 }
@@ -69,5 +74,10 @@ export default {
     font-size: 17px;
     line-height: 26.6px;
     color: #fff;
+}
+.preview-box{
+    width: 340px;
+    height: 700px;
+
 }
 </style>
