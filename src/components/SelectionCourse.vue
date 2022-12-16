@@ -41,8 +41,9 @@ export default {
     methods:{
         getLessonId(index){
             this.$store.state.checkAWS = false;
+            let state = this.$store.state.lesson_name;
             var title = this.lessons[index].title
-            console.log(title)
+            console.log(state)
             if(title=="Python"){
                 this.$store.dispatch("fillPython")
 

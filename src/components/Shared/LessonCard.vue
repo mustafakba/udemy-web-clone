@@ -1,6 +1,5 @@
 <template>
-    <router-link custom v-slot="{navigation}"  :to="this.$store.state.lesson_name.url">
-    <div @click="navigation" role="link"  class="card cursor-pointer">
+    <router-link :to="this.$store.state.lesson_name.url" role="link"  class="card cursor-pointer">
         <div class="background-image w-full h-32 bg-center bg-no-repeat" :style="{ background: `url('${this.$store.state.lesson_name.courses[0].image_url}') no-repeat` }"></div>
         <div class="course-comment">{{this.$store.state.lesson_name.courses[0].comment}}</div>
         <div class="course-author mt-0.5 mb-0.5">{{this.$store.state.lesson_name.courses[0].author}}</div>
@@ -16,7 +15,6 @@
         <div class="card-sticker">
             <span class="card-sticker">{{this.$store.state.lesson_name.courses[0].sticker}} </span>
         </div>
-    </div>
     </router-link>
 
 </template>
