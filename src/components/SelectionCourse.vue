@@ -73,8 +73,11 @@ export default {
             if(title=="Çizim"){
                 this.$store.dispatch("fillDraw")
             }
-        }
-    }
+        },
+
+    },
+
+
 }
 </script>
 
