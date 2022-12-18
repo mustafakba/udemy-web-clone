@@ -4,13 +4,20 @@ import {createStore} from 'vuex'
 const store = createStore({
     state() {
         return {
-            checkAWS : false,
+            checkAWS: false,
             lesson_name:
                 {
-                    url :"/preview/python",
+                    url: "/preview/python",
                     title: "Python ile kariyer olanaklarınızı artırın",
                     paragraph: "İster makine öğrenimi, ister finans alanında çalışıyor olun, ister web geliştirme veya veri bilimi alanında kariyer yapıyor olun, Python öğrenebileceğiniz en önemli becerilerden biridir. Python'un basit sözdizimi özellikle masaüstü, web ve iş uygulamaları için uygundur.",
                     button_title: "Python kurslarını keşfedin",
+                    learnings: [
+                        'Herhangi bir işi bilgisayarlara yaptırabilmek için algoritmalar geliştirebileceksiniz.\n' ,
+                        'Herhangi bir programın verilerini kaydedebilmek için dosya işlemlerini ve Sqlite veritabanını kullanmayı öğrenmiş olacaksınız.\n',
+                        'Elektronik Projelerde Raspberry Pi ile yapabileceklerinizi öngörebileceksiniz.\n',
+                        'Oyunların algoritmalarını öğrenip oyun geliştirmeniz mümkün olacak.\n',
+                        'Python’u iyi bir şekilde öğrendikten sonra diğer tüm dilleri öğrenmek sizin için çok kolay olacak.\n',
+                        'Linux işletim sistemini temel düzeyde öğreneceksiniz.\n',],
                     courses: [
                         {
                             image_url: "https://img-c.udemycdn.com/course/240x135/1235124_7c5f_6.jpg",
@@ -25,7 +32,7 @@ const store = createStore({
                     ]
                 },
 
-            otherCourses :[
+            otherCourses: [
                 {
                     image_url: "https://img-c.udemycdn.com/course/240x135/1235124_7c5f_6.jpg",
                     author: "Mustafa Murat Coşkun",
@@ -35,6 +42,7 @@ const store = createStore({
                     price: "₺129.99",
                     last_price: "₺459.99",
                     sticker: "En çok satan",
+
                 },
                 {
                     image_url: "https://img-c.udemycdn.com/course/240x135/1586464_cae5_3.jpg",
@@ -84,15 +92,15 @@ const store = createStore({
         fillPython({state}) {
             state.lesson_name.title = "Python ile kariyer olanaklarınızı artırın"
             state.lesson_name.paragraph = "İster makine öğrenimi, ister finans alanında çalışıyor olun, ister web geliştirme veya veri bilimi alanında kariyer yapıyor olun, Python öğrenebileceğiniz en önemli becerilerden biridir. Python'un basit sözdizimi özellikle masaüstü, web ve iş uygulamaları için uygundur.\n"
-            state.lesson_name.button_title ="Python kurslarını keşfedin"
+            state.lesson_name.button_title = "Python kurslarını keşfedin"
             state.lesson_name.courses[0].image_url = "https://img-c.udemycdn.com/course/240x135/1235124_7c5f_6.jpg"
-            state.lesson_name.courses[0].author ="Mustafa Murat Coşkun"
-            state.lesson_name.courses[0].comment ="(40+ Saat) Python | Sıfırdan İleri Seviye Programlama (2020)"
-            state.lesson_name.courses[0].rate ="4.7"
-            state.lesson_name.courses[0].vote ="42,505"
-            state.lesson_name.courses[0].price ="₺129.99"
-            state.lesson_name.courses[0].last_price ="₺459.99"
-            state.lesson_name.courses[0].sticker ="En çok satan"
+            state.lesson_name.courses[0].author = "Mustafa Murat Coşkun"
+            state.lesson_name.courses[0].comment = "(40+ Saat) Python | Sıfırdan İleri Seviye Programlama (2020)"
+            state.lesson_name.courses[0].rate = "4.7"
+            state.lesson_name.courses[0].vote = "42,505"
+            state.lesson_name.courses[0].price = "₺129.99"
+            state.lesson_name.courses[0].last_price = "₺459.99"
+            state.lesson_name.courses[0].sticker = "En çok satan"
             state.lesson_name.url = "/preview/python"
 
         },

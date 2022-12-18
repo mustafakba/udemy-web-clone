@@ -1,6 +1,6 @@
 <template>
-    <div class="container grid grid-cols-2  place-content-evenly place-items-center py-10 px-10 relative">
-        <div class="course-detail place-self-end ">
+    <div class="container-fluid grid grid-cols-3 px-60 pt-5 pb-10 ">
+        <div class="course-detail col-span-2 ">
             <span class="title blue-text">Yazılım > {{capitalized($route.params.name)}}</span>
             <div class="course-title my-3">{{this.$store.state.lesson_name.title}}</div>
             <div class="course-paragraph mt-3 mb-5">{{this.$store.state.lesson_name.paragraph}}</div>
@@ -19,12 +19,11 @@
                 <span class="ml-2">Türkçe</span>
             </div>
         </div>
-        <div class="right-section">
-            İçerik Kısmı
+        <div class="course-preview-video">
+            Buraya video gelecek
         </div>
     </div>
 
-    <button @click="goHome">Go To HomePage</button>
 </template>
 
 <script>
@@ -49,10 +48,8 @@ export default {
 </script>
 
 <style scoped>
-.container{
+.container-fluid{
 
-    min-width: 1339px;
-    max-width: 2150px;
     color: #F8F9FB;
     background-color:#1C1D1F;
 
