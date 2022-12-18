@@ -1,5 +1,6 @@
 <template>
-    <PreviewDetail></PreviewDetail>
+        <PreviewDetail></PreviewDetail>
+
 </template>
 
 <script>
@@ -13,4 +14,8 @@ export default {
 
 }
 </script>
+<style>
+    .container{
 
+    }
+</style>

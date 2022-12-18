@@ -1,9 +1,9 @@
 <template>
-    <div class="container grid grid-cols-2 place-content-evenly place-items-center py-10 px-10 relative">
-        <div class="course-detail grid-cols-2 place-self-end ">
+    <div class="container grid grid-cols-2  place-content-evenly place-items-center py-10 px-10 relative">
+        <div class="course-detail place-self-end ">
             <span class="title blue-text">Yazılım > {{capitalized($route.params.name)}}</span>
             <div class="course-title my-3">{{this.$store.state.lesson_name.title}}</div>
-            <div class="course-paragraph my-3">{{this.$store.state.lesson_name.paragraph}}</div>
+            <div class="course-paragraph mt-3 mb-5">{{this.$store.state.lesson_name.paragraph}}</div>
             <div class="course-point flex items-center my-3">
                 <span style="color: #FFC784">{{this.$store.state.lesson_name.courses[0].rate}}</span>
                 <span class="flex ml-2 mr-2"><StarIcon v-for="i in 5" :key="i"></StarIcon></span>
@@ -19,10 +19,8 @@
                 <span class="ml-2">Türkçe</span>
             </div>
         </div>
-        <div class="course-preview absolute top-24 right-96 bg-amber-50 ">
-            <div class="preview-box border-2 text-black sticky">
-                İÇERİK OLACAK
-            </div>
+        <div class="right-section">
+            İçerik Kısmı
         </div>
     </div>
 
@@ -52,10 +50,13 @@ export default {
 
 <style scoped>
 .container{
+
     min-width: 1339px;
     max-width: 2150px;
     color: #F8F9FB;
     background-color:#1C1D1F;
+
+;
 }
 .blue-text{
     color: #CEC0FC;
@@ -73,6 +74,7 @@ export default {
     font-size: 17px;
     line-height: 26.6px;
     color: #fff;
+    max-width: 600px;
 }
 .preview-box{
     width: 340px;
