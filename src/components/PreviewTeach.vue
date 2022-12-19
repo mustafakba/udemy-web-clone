@@ -25,8 +25,6 @@ export default {
     letter-spacing: -.2px;
     font-weight: 700;
     color: #1c1d1f;
-
-
 }
 
 .main-container {
