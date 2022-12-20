@@ -9,24 +9,29 @@
             </div>
             <div v-for="(item,index) in collapse" :key=index class="">
                 <button class="collapse-button border flex justify-between w-full text-left " type="button"
-                        data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
-                        aria-controls="collapseExample">
+                        data-bs-toggle="collapse" :data-bs-target="'#collapseExample'+index " aria-expanded="false"
+                        :aria-controls="'collapseExample'+ index ">
                              <span class="flex">
                                  <img src="../image/tick.svg" alt="">
                                  <span class=" ml-2 button-title">{{ collapse[index].title }}</span>
                              </span>
-                            <span class="course-length">{{ collapse[index].length[0] }}</span>
+                    <span class="course-length">{{ collapse[index].length[0] }}</span>
 
                 </button>
-                <div class="collapse border" id="collapseExample">
+                <div class="collapse border" :id="'collapseExample'+ index ">
                     <div class="collapse-explanation flex justify-between">
-                        <div class="left-section flex justify-center items-center">
-                            <img class="w-4 h-4 mr-2" src="../image/play.svg" alt="">
-                            <div class="collapse-course-content text-underline-color">{{ collapse[index].content[3] }}</div>
-                        </div>
-                        <div class="right-section flex">
-                            <span class="mr-3.5 text-underline-color">Önizleme</span>
-                            <div class="length">02:00</div>
+                        <div class="flex flex-col w-full">
+                            <div v-for="(course,i) in item.content " :key="i"
+                                 class="flex py-1 items-center justify-between collapse-course-content text-underline-color">
+                                <div class="left-section flex items-center ">
+                                    <img class="w-4 h-4 mr-2" src="../image/play.svg" alt="">
+                                    <span>{{ course }}</span>
+                                </div>
+                                <div class="right-section flex items-center">
+                                    <span class="mr-3.5 text-underline-color">Önizleme</span>
+                                    <div class="length">02:00</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -81,35 +86,41 @@ export default {
 
 <style scoped>
 .collapse-button {
-    padding:15px 25px ;
-    background-color:#F7F9FA ;
+    padding: 15px 25px;
+    background-color: #F7F9FA;
     color: #1c1d1f;
     font-weight: 700;
     font-size: 16px;
 }
-.border{
+
+.border {
     border: 1px solid rgba(106, 111, 115, 0.3);
 
 }
-.course-length{
+
+.course-length {
     color: #6a6f73;
     font-size: 14px;
     font-weight: 500;
 }
-.collapse-explanation{
-    padding:15px 25px ;
+
+.collapse-explanation {
+    padding: 15px 25px;
 }
-.collapse-explanation .preview{
+
+.collapse-explanation .preview {
     color: #401b9c;
 }
+
 .title {
     font-size: 24px;
     font-weight: 700;
 }
-.text-underline-color{
+
+.text-underline-color {
     cursor: pointer;
     color: #401b9c;
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
 .episodes-expands:hover {
