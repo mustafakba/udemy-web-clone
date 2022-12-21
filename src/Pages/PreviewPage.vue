@@ -4,6 +4,7 @@
     <PreviewCompanies></PreviewCompanies>
     <PreviewContent></PreviewContent>
     <PreviewInformation></PreviewInformation>
+    <PreviewOthers></PreviewOthers>
 </template>
 
 <script>
@@ -13,10 +14,12 @@ import PreviewTeach from "@/components/PreviewTeach";
 import PreviewContent from "@/components/PreviewContent";
 import PreviewCompanies from "@/components/PreviewCompanies";
 import PreviewInformation from "@/components/PreviewInformation";
+import PreviewOthers from "@/components/PreviewOthers";
 
 export default {
     name: "PreviewPage",
     components: {
+        PreviewOthers,
         PreviewInformation,
         PreviewCompanies,
         PreviewContent,
