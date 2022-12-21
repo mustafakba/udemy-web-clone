@@ -35,17 +35,18 @@
                     </div>
                 </div>
             </div>
-            <button class="episode-button mt-2 w-full flex justify-center items-center bg-white">25 bölüm daha </button>
+            <button class="episode-button mt-2 w-full flex justify-center items-center bg-white mb-5">25 bölüm daha </button>
+            <PreviewRequirement></PreviewRequirement>
 
         </div>
-
     </div>
 </template>
 
 <script>
+import PreviewRequirement from "@/components/PreviewRequirement";
 export default {
     name: "PreviewContent",
-
+    components: {PreviewRequirement},
     data() {
         return {
             collapse: [

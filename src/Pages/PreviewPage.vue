@@ -3,7 +3,6 @@
     <PreviewTeach class="mt-5"></PreviewTeach>
     <PreviewCompanies></PreviewCompanies>
     <PreviewContent></PreviewContent>
-
 </template>
 
 <script>
