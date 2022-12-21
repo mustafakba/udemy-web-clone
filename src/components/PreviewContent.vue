@@ -16,7 +16,6 @@
                                  <span class=" ml-2 button-title">{{ collapse[index].title }}</span>
                              </span>
                     <span class="course-length">{{ collapse[index].length[0] }}</span>
-
                 </button>
                 <div class="collapse border" :id="'collapseExample'+ index ">
                     <div class="collapse-explanation flex justify-between">
@@ -36,6 +35,7 @@
                     </div>
                 </div>
             </div>
+            <button class="episode-button mt-2 w-full flex justify-center items-center bg-white">25 bölüm daha </button>
 
         </div>
 
@@ -92,10 +92,18 @@ export default {
     font-weight: 700;
     font-size: 16px;
 }
+.episode-button {
+    font-weight: 700;
+    border: 1px solid #1c1d1f;
+    background-color: #fff;
+    padding-bottom: 15px;
+    padding-top:15px;
+    transition: all .2s;
 
-.border {
-    border: 1px solid rgba(106, 111, 115, 0.3);
 
+}
+.episode-button:hover{
+    background-color: rgba(106, 111, 115, 0.1);
 }
 
 .course-length {
