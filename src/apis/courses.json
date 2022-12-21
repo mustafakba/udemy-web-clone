@@ -1,5 +1,55 @@
 [
-  {
 
+  {
+    "id": 1,
+    "title": "Python ile Sıfırdan ileri seviye programlama",
+    "image": "https://img-c.udemycdn.com/course/50x50/2463492_8344_3.jpg",
+    "bought" : "39.213",
+    "price" : "₺169.99",
+    "last_updated" : "11/2021",
+    "rate" : "4.7",
+    "total_hour" : "51"
+  },
+  {
+  "id": 2,
+  "title": "(100+ Saat) Aranan Programcı Olma Kursu Edin",
+  "image": "https://img-c.udemycdn.com/course/50x50/2310884_04cd_6.jpg",
+  "bought" : "75.167",
+  "price" : "₺429.99",
+  "last_updated" : "05/2022",
+  "rate" : "4.5",
+  "total_hour" : "14,5"
+},
+  {
+    "id": 3,
+    "title": "Python ile Sıfırdan ileri seviye Python Programlama",
+    "image": "https://img-c.udemycdn.com/course/50x50/3124082_134b_9.jpg",
+    "bought" : "778.167",
+    "price" : "₺999.99",
+    "last_updated" : "07/2022",
+    "rate" : "4,5",
+    "total_hour" : "25"
+  },
+  {
+    "id": 4,
+    "title": "C| Sıfırdan İleri Seviyeye Komple C Programlama",
+    "image": "https://img-c.udemycdn.com/course/50x50/1743456_27c7_5.jpg",
+    "bought" : "778.167",
+    "price" : "₺999.99",
+    "last_updated" : "07/2022",
+    "rate" : "4,5",
+    "total_hour" : "25",
+    "ticket" : "En çok satan"
+  },
+  {
+    "id": 5,
+    "title": "Amazon Satıcı FBA ve Dropshipping Eğitimi ",
+    "image": "https://img-c.udemycdn.com/course/50x50/2160694_f51b_2.jpg",
+    "bought" : "35.167",
+    "price" : "₺429.99",
+    "last_updated" : "01/2022",
+    "rate" : "3,5",
+    "total_hour" : "175,5",
+    "ticket" : "En çok satan"
   }
 ]
