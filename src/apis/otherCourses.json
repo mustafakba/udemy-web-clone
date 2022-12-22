@@ -10,7 +10,8 @@
     "total_hour" : "51",
     "author" : "Prof. Dr. Şadi Evren Şeker",
     "ticket" : "En çok satan",
-    "last_price" : "₺478.99"
+    "last_price" : "₺478.99",
+    "image_plus" : "Evet"
 
   },
   {
@@ -23,8 +24,8 @@
     "rate" : "4.5",
     "total_hour" : "14,5",
     "author" : "DATAI TEAM",
-    "last_price" : "₺799.99"
-
+    "last_price" : "₺799.99",
+    "image_plus" : "Evet"
   },
   {
     "id": 3,
