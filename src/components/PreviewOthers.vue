@@ -2,7 +2,7 @@
     <div class="main-container grid grid-cols-3 px-60 mt-3 pb-10 ">
         <div class="other-courses grid col-span-2 ">
             <div class="title">Öğrencilerin kaydolduğu diğer kurslar</div>
-            <div v-for="(course,index) in courseData" :key="index" class="course-container flex justify-between py-2.5">
+            <div v-for="(course,index) in courseData" :key="index" class="course-container flex justify-between py-2.5 mb-2.5">
                 <div class="course-content flex items-center justify-center text-left">
                     <div :style="{ background: `url('${courseData[index].image}') no-repeat center` }"
                          class="course-img w-20 h-20"></div>
@@ -27,19 +27,22 @@
                         </div>
                 </div>
             </div>
+            <TheButton :button_data="button_data"></TheButton>
         </div>
     </div>
 </template>
 
 <script>
+import TheButton from "@/components/Shared/TheButton";
 import courseData from '../apis/courses.json'
 import StarIcon from "@/Icons/starIcon";
 
 export default {
     name: "PreviewOthers",
-    components: {StarIcon},
+    components: {TheButton, StarIcon},
     data() {
         return {
+            button_data :'Daha fazla göster',
             courseData: courseData,
         }
     },
@@ -92,7 +95,7 @@ export default {
 }
 
 .course-container {
-    border-bottom: 1px solid #6a6f73;
+    border-bottom: 1px solid rgba(106, 111, 115, 0.3);
 }
 
 

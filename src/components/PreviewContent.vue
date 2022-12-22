@@ -35,20 +35,21 @@
                     </div>
                 </div>
             </div>
-            <button class="episode-button mt-2 w-full flex justify-center items-center bg-white mb-5">25 bölüm daha </button>
+            <TheButton :button_data="button_data"></TheButton>
             <PreviewRequirement></PreviewRequirement>
-
         </div>
     </div>
 </template>
 
 <script>
 import PreviewRequirement from "@/components/PreviewRequirement";
+import TheButton from "@/components/Shared/TheButton";
 export default {
     name: "PreviewContent",
-    components: {PreviewRequirement},
+    components: {TheButton, PreviewRequirement},
     data() {
         return {
+            button_data : "25 bölüm daha",
             collapse: [
                 {
                     title: 'Kursa Giriş',
@@ -93,19 +94,7 @@ export default {
     font-weight: 700;
     font-size: 16px;
 }
-.episode-button {
-    font-weight: 700;
-    border: 1px solid #1c1d1f;
-    background-color: #fff;
-    padding-bottom: 15px;
-    padding-top:15px;
-    transition: all .2s;
 
-
-}
-.episode-button:hover{
-    background-color: rgba(106, 111, 115, 0.1);
-}
 
 .course-length {
     color: #6a6f73;
