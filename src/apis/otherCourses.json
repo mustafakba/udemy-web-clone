@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "title": "Python ile Makine Öğrenmesi ",
+    "image": "https://img-c.udemycdn.com/course/240x135/1586464_cae5_3.jpg",
+    "bought" : "39.213",
+    "price" : "₺169.99",
+    "last_updated" : "11/2021",
+    "rate" : "4.7",
+    "total_hour" : "51",
+    "author" : "Prof. Dr. Şadi Evren Şeker",
+    "ticket" : "En çok satan",
+    "last_price" : "₺478.99"
+
+  },
+  {
+    "id": 2,
+    "title": "(100+ Saat) Aranan Programcı Olma Kursu Edin",
+    "image": "https://img-c.udemycdn.com/course/240x135/1750344_1df6_2.jpg",
+    "bought" : "75.167",
+    "price" : "₺429.99",
+    "last_updated" : "05/2022",
+    "rate" : "4.5",
+    "total_hour" : "14,5",
+    "author" : "DATAI TEAM",
+    "last_price" : "₺799.99"
+
+  },
+  {
+    "id": 3,
+    "title": "Python| Yapay Zeka İçin Python Programlama",
+    "image": "https://img-c.udemycdn.com/course/240x135/1746350_90f5_3.jpg",
+    "bought" : "778.167",
+    "price" : "₺199.99",
+    "last_updated" : "07/2022",
+    "rate" : "4,5",
+    "total_hour" : "25",
+    "ticket" : "En çok satan",
+    "author" : "Mustafa Kaba",
+    "last_price" : "₺499.99"
+
+  }
+]
