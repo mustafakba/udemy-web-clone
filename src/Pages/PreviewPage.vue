@@ -6,10 +6,11 @@
     <PreviewInformation></PreviewInformation>
     <PreviewOthers></PreviewOthers>
     <PreviewBuys></PreviewBuys>
+    <PreviewTeacher></PreviewTeacher>
 </template>
 
 <script>
-
+import PreviewTeacher from "@/components/PreviewTeacher";
 import PreviewDetail from "@/components/PreviewDetail";
 import PreviewTeach from "@/components/PreviewTeach";
 import PreviewContent from "@/components/PreviewContent";
@@ -28,6 +29,7 @@ export default {
         PreviewContent,
         PreviewTeach,
         PreviewDetail,
+        PreviewTeacher,
     }
 
 }

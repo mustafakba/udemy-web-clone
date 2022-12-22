@@ -21,7 +21,6 @@
                 <button v-if="!showMore"  @click="changeShow()" style="color: #401b9c;" class="font-bold flex">
                     <span class="mr-2">Daha Fazla Göster </span>
                     <img class="bottom-arrow" src="../image/bottom-arrow.svg" alt="">
-
                 </button>
                 <div :class="{ 'show-more': !showMore }"  class="my-3">
                     Part 1 - Veri Önişleme (Data Preprocessing) <br>
