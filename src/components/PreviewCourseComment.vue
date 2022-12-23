@@ -40,6 +40,9 @@
                     </div>
                 </div>
             </div>
+            <div class="show-comment-button w-1/3 mt-8">
+                <TheButton :button_data="button_data"></TheButton>
+            </div>
         </div>
     </div>
 </template>
@@ -47,13 +50,15 @@
 <script>
 import LittleStarIcon from "@/Icons/starIcon";
 import courseComment from '../apis/courseComment.json'
+import TheButton from "@/components/Shared/TheButton";
 
 export default {
     name: "PreviewCourseComment",
-    components: { LittleStarIcon},
+    components: {TheButton, LittleStarIcon},
     data() {
         return {
             courseComment,
+            button_data : 'Tüm yorumları göster'
         }
     }
 }

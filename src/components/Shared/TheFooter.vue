@@ -1,5 +1,5 @@
 <template>
-    <div class="container-m mt-20 lg:mt-32">
+    <div class="container-m mt-20 lg:mt-8">
         <div class="footer-top grid lg:grid-cols-2 place-content-between">
             <div class="left-section grid grid-cols-1 lg:grid-cols-3 ">
                 <div class="section-footer-menu mb-5 lg:mb-0">

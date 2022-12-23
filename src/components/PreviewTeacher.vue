@@ -1,4 +1,5 @@
 <template>
+    .
     <div class="main-container grid grid-cols-3 px-60 py-5">
         <div class="col-span-2">
             <h3 class="title mt-2">Eğitmen</h3>

@@ -8,6 +8,7 @@
     <PreviewBuys></PreviewBuys>
     <PreviewTeacher></PreviewTeacher>
     <PreviewCourseComment></PreviewCourseComment>
+    <PreviewOtherCourses></PreviewOtherCourses>
 </template>
 
 <script>
@@ -21,11 +22,13 @@ import PreviewInformation from "@/components/PreviewInformation";
 import PreviewOthers from "@/components/PreviewOthers";
 import PreviewBuys from "@/components/PreviewBuys";
 import PreviewCourseComment from "@/components/PreviewCourseComment";
+import PreviewOtherCourses from "@/components/PreviewOtherCourses";
 
 
 export default {
     name: "PreviewPage",
     components: {
+        PreviewOtherCourses,
         PreviewBuys,
         PreviewOthers,
         PreviewInformation,

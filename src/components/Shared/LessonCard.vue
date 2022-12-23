@@ -16,7 +16,6 @@
             <span class="card-sticker">{{this.$store.state.lesson_name.courses[0].sticker}} </span>
         </div>
     </router-link>
-
 </template>
 
 <script>
