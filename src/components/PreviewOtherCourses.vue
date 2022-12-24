@@ -1,6 +1,5 @@
 <template>
-    <div class="grid grid-cols-3  px-60 mt-3 pb-10">
-        <div class="col-span-2 ">
+    <div class="main-container">
             <div class="title mb-6"><span class="cursor-pointer" style="color: #401b9c!important;">Murat Hoca </span>Adlı Eğitmenin Diğer Kursları
             </div>
             <div class="card-container flex justify-between mb-4">
@@ -29,7 +28,6 @@
             </div>
             <TheButton :button_data="`Kötüye kullanım bildir`"></TheButton>
         </div>
-    </div>
 </template>
 
 <script>

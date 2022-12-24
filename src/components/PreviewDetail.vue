@@ -1,6 +1,6 @@
 <template>
-    <div class="container-fluid grid grid-cols-3 px-60 pt-5 pb-10 ">
-        <div class="course-detail col-span-2 ">
+    <div class="container-fluid ">
+        <div class="course-detail  ">
             <span class="title blue-text">Yazılım > {{capitalized($route.params.name)}}</span>
             <div class="course-title my-3">{{this.$store.state.lesson_name.title}}</div>
             <div class="course-paragraph mt-3 mb-5">{{this.$store.state.lesson_name.paragraph}}</div>
@@ -19,9 +19,7 @@
                 <span class="ml-2">Türkçe</span>
             </div>
         </div>
-        <div class="course-preview-video">
-            Buraya video gelecek
-        </div>
+
     </div>
 
 </template>
@@ -74,8 +72,16 @@ export default {
     max-width: 600px;
 }
 .preview-box{
+    position: absolute;
+    top: 105px;
+    right: 200px;
     width: 340px;
+    background-color: yellow;
     height: 700px;
-
+}
+.preview-img{
+    width: 100%;
+    height: 100%;
+    z-index: 15;
 }
 </style>

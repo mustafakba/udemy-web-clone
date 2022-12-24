@@ -1,14 +1,21 @@
 <template>
-    <PreviewDetail></PreviewDetail>
-    <PreviewTeach class="mt-5"></PreviewTeach>
-    <PreviewCompanies></PreviewCompanies>
-    <PreviewContent></PreviewContent>
-    <PreviewInformation></PreviewInformation>
-    <PreviewOthers></PreviewOthers>
-    <PreviewBuys></PreviewBuys>
-    <PreviewTeacher></PreviewTeacher>
-    <PreviewCourseComment></PreviewCourseComment>
-    <PreviewOtherCourses></PreviewOtherCourses>
+    <div class="left-section container-fluid grid grid-cols-3 px-60 pt-5 pb-10 ">
+        <div class="col-span-2">
+            <PreviewDetail></PreviewDetail>
+            <PreviewTeach class="mt-5"></PreviewTeach>
+            <PreviewCompanies></PreviewCompanies>
+            <PreviewContent></PreviewContent>
+            <PreviewInformation></PreviewInformation>
+            <PreviewOthers></PreviewOthers>
+            <PreviewBuys></PreviewBuys>
+            <PreviewTeacher></PreviewTeacher>
+            <PreviewCourseComment></PreviewCourseComment>
+            <PreviewOtherCourses></PreviewOtherCourses>
+        </div>
+    </div>
+    <div class="right-section col-span-1 text-gray-700black">
+        burası right section olacak
+    </div>
 </template>
 
 <script>

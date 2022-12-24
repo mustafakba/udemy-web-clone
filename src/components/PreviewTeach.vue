@@ -1,6 +1,6 @@
 <template>
-    <div class="main-container grid grid-cols-3 px-60 py-5">
-        <div class="for-border col-span-2">
+    <div class="main-container">
+        <div class="for-border ">
             <h3 class="title mb-2">Öğrenecekleriniz</h3>
             <div class="content-container grid grid-cols-2">
                 <span v-for="(i,index) in this.$store.state.lesson_name.learnings" :key="index"
@@ -30,10 +30,12 @@ export default {
 .main-container {
     color: #1c1d1f;
 }
-.tick{
+
+.tick {
     width: 20px;
     height: 24px;
 }
+
 .content {
     font-size: 14px;
     line-height: 19.5px;

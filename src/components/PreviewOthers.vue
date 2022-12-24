@@ -1,6 +1,6 @@
 <template>
-    <div class="main-container grid grid-cols-3 px-60 mt-3 pb-10 ">
-        <div class="other-courses grid col-span-2 ">
+    <div class="main-container ">
+        <div class="other-courses  ">
             <div class="title">Öğrencilerin kaydolduğu diğer kurslar</div>
             <div v-for="(course,index) in courseData" :key="index" class="course-container flex justify-between py-2.5 mb-2.5">
                 <div class="course-content flex items-center justify-center text-left">

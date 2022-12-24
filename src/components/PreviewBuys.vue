@@ -1,6 +1,6 @@
 <template>
-    <div class="main-container grid grid-cols-3 px-60 py-5">
-        <div class="for-border col-span-2">
+    <div class="main-container ">
+        <div class="for-border ">
             <h3 class="title mt-2">Bu Kurslarla Birlikte Satın Alınanlar</h3>
             <div v-for="(course,index) in 3" :key="index" class="course-container cursor-pointer flex justify-between my-3">
                 <div class="content-container flex">

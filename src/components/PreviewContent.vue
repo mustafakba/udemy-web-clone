@@ -1,6 +1,6 @@
 <template>
-    <div class="main-container grid grid-cols-3 px-60 mt-3 pb-10 ">
-        <div class="content col-span-2">
+    <div class="main-container ">
+        <div class="content ">
             <h3 class="title">Kurs İçeriği</h3>
             <div class="episodes-area flex justify-between mt-4 mb-4">
                 <span>23 bölüm • 111 ders • 11 sa 3 dak toplam uzunluk</span>

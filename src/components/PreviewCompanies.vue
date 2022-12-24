@@ -1,6 +1,6 @@
 <template>
-    <div class="main-container grid grid-cols-3 px-60 py-5">
-        <div class="for-border col-span-2">
+    <div class="main-container ">
+        <div class="for-border ">
             <h3 class="title mb-2">En iyi şirketler, çalışanlarına bu kursu sunmaktadır</h3>
             <div class="content-container">
                 <span>Bu kurs, dünya genelindeki işletmelerin güvendiği ve en yüksek puan alan kurslardan oluşan koleksiyonumuz için seçilmiştir.
