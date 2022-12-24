@@ -1,21 +1,34 @@
 <template>
-    <div class="left-section container-fluid grid grid-cols-3 px-60 pt-5 pb-10 ">
-        <div class="col-span-2">
-            <PreviewDetail></PreviewDetail>
-            <PreviewTeach class="mt-5"></PreviewTeach>
-            <PreviewCompanies></PreviewCompanies>
-            <PreviewContent></PreviewContent>
-            <PreviewInformation></PreviewInformation>
-            <PreviewOthers></PreviewOthers>
-            <PreviewBuys></PreviewBuys>
-            <PreviewTeacher></PreviewTeacher>
-            <PreviewCourseComment></PreviewCourseComment>
-            <PreviewOtherCourses></PreviewOtherCourses>
+    <div class="top-header"></div>
+    <div class="container-fluid grid grid-cols-3 place-content-around place-self-center py-5 px-60">
+        <div class="left-section col-span-2">
+            <div class="header mt-2">
+                <PreviewDetail></PreviewDetail>
+            </div>
+            <div class="mt-20">            <PreviewTeach></PreviewTeach>
+            </div>
+            <div class="mt-5">            <PreviewCompanies></PreviewCompanies>
+            </div>
+            <div class="mt-5">            <PreviewContent></PreviewContent>
+            </div>
+            <div class="mt-5">            <PreviewInformation></PreviewInformation>
+            </div>
+            <div class="mt-5">            <PreviewOthers></PreviewOthers>
+            </div>
+            <div class="mt-5">            <PreviewBuys></PreviewBuys>
+            </div>
+            <div class="mt-5">            <PreviewTeacher></PreviewTeacher>
+            </div>
+            <div class="mt-5">            <PreviewCourseComment></PreviewCourseComment>
+            </div>
+            <div class="mt-5">            <PreviewOtherCourses></PreviewOtherCourses>
+            </div>
+        </div>
+        <div class="right-section col-span-1 text-gray-700">
+            burası right section olacak
         </div>
     </div>
-    <div class="right-section col-span-1 text-gray-700black">
-        burası right section olacak
-    </div>
+
 </template>
 
 <script>
@@ -50,10 +63,13 @@ export default {
 }
 </script>
 <style>
-.container2 {
-    min-width: 1390px;
-    max-width: 2100px;
-    color: #F8F9FB;
 
+
+.top-header{
+position: absolute ;
+    width: 100%;
+    height: 365px;
+    background-color: #1c1d1f;
+    z-index: -50;
 }
 </style>
