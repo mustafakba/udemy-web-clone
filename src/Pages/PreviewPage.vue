@@ -35,8 +35,19 @@
         </div>
         <div class="right-section col-span-1 text-gray-700 ml-12 mt-16 ">
             <div class="course-preview">
-                <div class="course-img ">
-                    <img src="https://picsum.photos/seed/picsum/400/250" alt="">
+                <div class="course-img relative">
+                    <img src="https://picsum.photos/400/250" alt="">
+                    <div class="course-preview-button absolute top-0">
+                        <div class="flex flex-col justify-center items-center">
+                            <div class="play-button">
+                                <img src="../image/play-video-black.svg" alt="">
+                            </div>
+                            <span
+                                class="flex justify-center items-center text-white mt-4 font-bold">Bu kursu önizle</span>
+
+                        </div>
+
+                    </div>
                 </div>
                 <div class="course-bottom-section px-6 bg-white py-4">
                     <span class="price font-extrabold ">₺429.99</span>
@@ -77,10 +88,12 @@
                         </div>
                     </div>
                     <div class="right-section-footer">
-                        <h3 class="title font-extrabold mt-5 mb-3 text-lg">5 veya daha fazla kişiye mi eğitim veriyorsunuz?
+                        <h3 class="title font-extrabold mt-5 mb-3 text-lg">5 veya daha fazla kişiye mi eğitim
+                            veriyorsunuz?
                         </h3>
                         <p class="text-gray-700 mb-3">
-                            Ekibinize Udemy'nin en iyi 19.000+ kursuna istedikleri zaman istedikleri yerden erişebilme imkanı sağlayın.
+                            Ekibinize Udemy'nin en iyi 19.000+ kursuna istedikleri zaman istedikleri yerden erişebilme
+                            imkanı sağlayın.
                         </p>
                         <TheButton :button_data="'Udemy Business ürününü deneyin'"></TheButton>
                     </div>
@@ -140,27 +153,53 @@ export default {
     background-color: #1c1d1f;
     z-index: -50;
 }
+
 .price {
     font-size: 32px;
     color: #1c1d1f;
     letter-spacing: -.02px;
 }
-.content{
+
+.content {
     display: flex;
     align-items: center;
     margin-top: 7px;
 }
-.content img{
+
+.content img {
     flex-shrink: 0;
     margin-right: 12px;
 
     width: 16px;
     height: 16px;
 }
-.explanation{
+
+.explanation {
     color: #6a6f73;
 }
-.right-section-footer{
+
+.right-section-footer {
     border-top: 1px solid rgba(106, 111, 115, 0.3);
+}
+
+.course-preview-button {
+    margin-top: 80px;
+    margin-left: 120.5px;
+}
+
+.play-button {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #FFffff;
+    border-radius: 50%;
+}
+
+.play-button img {
+    margin-left: 7px;
+    width: 36px;
 }
 </style>
