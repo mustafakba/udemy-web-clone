@@ -39,14 +39,12 @@
                     <img src="https://picsum.photos/400/250" alt="">
                     <div class="course-preview-button absolute top-0">
                         <div class="flex flex-col justify-center items-center">
-                            <div class="play-button">
+                            <button @click="buttonCalisti" class="play-button">
                                 <img src="../image/play-video-black.svg" alt="">
-                            </div>
+                            </button>
                             <span
                                 class="flex justify-center items-center text-white mt-4 font-bold">Bu kursu önizle</span>
-
                         </div>
-
                     </div>
                 </div>
                 <div class="course-bottom-section px-6 bg-white py-4">
@@ -135,6 +133,11 @@ export default {
         PreviewDetail,
         PreviewTeacher,
         PreviewCourseComment,
+    },
+    methods:{
+        buttonCalisti(){
+            console.log('ButtonCalisti')
+        }
     }
 
 }
