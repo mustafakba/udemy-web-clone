@@ -1,6 +1,6 @@
 <template>
     <div class="top-header"></div>
-    <div class="container-fluid grid grid-cols-3 place-content-around place-self-center py-5 px-60">
+    <div :class="{'dark-mode' : !opacity} " class="container-fluid grid grid-cols-3 place-content-around place-self-center py-5 px-60">
         <div class="left-section col-span-2">
             <div class="header mt-2">
                 <PreviewDetail></PreviewDetail>
@@ -39,7 +39,8 @@
                     <img src="https://picsum.photos/400/250" alt="">
                     <div class="course-preview-button absolute top-0">
                         <div class="flex flex-col justify-center items-center">
-                            <button @click="buttonCalisti" class="play-button">
+                            <button type="button" @click="changeOpacity" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    class="play-button">
                                 <img src="../image/play-video-black.svg" alt="">
                             </button>
                             <span
@@ -96,6 +97,91 @@
                         <TheButton :button_data="'Udemy Business ürününü deneyin'"></TheButton>
                     </div>
                 </div>
+
+                <!--        Modal Başlanıgç         -->
+
+                <!--        Modal Bitiş             -->
+
+            </div>
+        </div>
+
+    </div>
+    <button type="button" class="px-6
+                  py-2.5
+                  bg-blue-600
+                  text-white
+                  font-medium
+                  text-xs
+                  leading-tight
+                  uppercase
+                  rounded
+                  shadow-md
+                  hover:bg-blue-700 hover:shadow-lg
+                  focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+                  active:bg-blue-800 active:shadow-lg
+                  transition
+                  duration-150
+                  ease-in-out">
+        Launch demo modal
+    </button>
+    <!-- Modal -->
+    <div
+        class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+        id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog relative w-auto pointer-events-none">
+            <div
+                class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
+                <div
+                    class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
+                    <h5 class="text-xl font-medium leading-normal text-gray-800" id="exampleModalLabel">
+                        Modal title</h5>
+                    <button
+                            @click="changeOpacity()"
+                            type="button"
+                            class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body relative p-4">
+                    Modal body text goes here.
+                </div>
+                <div
+                    class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
+                    <button type="button" class="px-6
+                                          py-2.5
+                                          bg-purple-600
+                                          text-white
+                                          font-medium
+                                          text-xs
+                                          leading-tight
+                                          uppercase
+                                          rounded
+                                          shadow-md
+                                          hover:bg-purple-700 hover:shadow-lg
+                                          focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0
+                                          active:bg-purple-800 active:shadow-lg
+                                          transition
+                                          duration-150
+                                          ease-in-out" data-bs-dismiss="modal">Close
+                    </button>
+                    <button type="button" class="px-6
+                                      py-2.5
+                                      bg-blue-600
+                                      text-white
+                                      font-medium
+                                      text-xs
+                                      leading-tight
+                                      uppercase
+                                      rounded
+                                      shadow-md
+                                      hover:bg-blue-700 hover:shadow-lg
+                                      focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+                                      active:bg-blue-800 active:shadow-lg
+                                      transition
+                                      duration-150
+                                      ease-in-out
+                                      ml-1">Save changes
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -134,16 +220,25 @@ export default {
         PreviewTeacher,
         PreviewCourseComment,
     },
+    data(){
+        return{
+            opacity : 1,
+        }
+    },
     methods:{
-        buttonCalisti(){
-            console.log('ButtonCalisti')
+        changeOpacity(){
+            this.opacity = !this.opacity
+            console.log(this.opacity)
         }
     }
-
 }
 </script>
 <style scoped>
-
+.dark-mode{
+    z-index: 1100;
+    background-color: #000;
+    opacity: .6;
+}
 .course-bottom-section {
     box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
 
